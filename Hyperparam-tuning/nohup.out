@@ -1,0 +1,1230 @@
+Processing the main part of the code ....
+[32m[I 2022-06-02 16:50:44,553][0m A new study created in memory with name: HP-tuning Monn-2[0m
+atom dict size: 78, bond dict size: 13, word dict size: 21
+setting:new_compound
+fold : 0, train: 5988, test: 1582, valid:902
+fold : 1, train: 5876, test: 1746, valid:850
+fold : 2, train: 5705, test: 1555, valid:1212
+fold : 3, train: 6080, test: 1571, valid:821
+fold : 4, train: 5683, test: 2018, valid:771
+fold 1 begin
+train num: 5988 valid num: 902 test num: 1582
+Highest value:15.0, lowest value:0.3979400086720375, mean : 6.316178827863305,sd:2.0211355870365115
+Highest value:12.0, lowest value:1.2660007134616131, mean : 6.176285310640962,sd:1.923991644522675
+Highest value:15.221848749616356, lowest value:0.8239087409443187, mean : 6.360944647753371,sd:1.9757415763038524
+Learning rate: 0.0018925158223810842
+Epoch: 27 
+Batch: 0
+Epoch: 27 
+Batch: 100
+epoch: 27 total loss 1096.323229 affinity loss 13.560992 pairwise loss 10827.622179
+train 5988 RMSE 1.712881 Pearson 0.572664 Spearman 0.579446 avg pairwise AUC 0.497628
+valid 902 RMSE 1.702391 Pearson 0.558851 Spearman 0.574973 avg pairwise AUC 0.490287
+test  1582 RMSE 1.744218 Pearson 0.542243 Spearman 0.557547 avg pairwise AUC 0.492175
+Finished Training
+------------------------------
+fold 2 begin
+train num: 5876 valid num: 850 test num: 1746
+Highest value:15.221848749616356, lowest value:0.3979400086720375, mean : 6.266248813266618,sd:1.976992849605154
+Highest value:11.698970004336019, lowest value:1.0506099933550872, mean : 6.348450409657415,sd:2.0122753089466188
+Highest value:12.721246399047171, lowest value:1.2660007134616131, mean : 6.436793659350515,sd:2.0791297407054703
+Learning rate: 0.0018925158223810842
+Epoch: 27 
+Batch: 0
+Epoch: 27 
+Batch: 100
+epoch: 27 total loss 1110.998734 affinity loss 37.148696 pairwise loss 10738.500202
+train 5876 RMSE 1.670178 Pearson 0.542327 Spearman 0.555715 avg pairwise AUC 0.438526
+valid 850 RMSE 1.748372 Pearson 0.497485 Spearman 0.494353 avg pairwise AUC 0.452399
+test  1746 RMSE 1.705151 Pearson 0.575061 Spearman 0.5976 avg pairwise AUC 0.446166
+Finished Training
+------------------------------
+fold 3 begin
+train num: 5705 valid num: 1212 test num: 1555
+Highest value:15.0, lowest value:0.6575773191777938, mean : 6.333695930130674,sd:2.0144719038250236
+Highest value:15.221848749616356, lowest value:0.3979400086720375, mean : 5.989400486785516,sd:1.9298356357631683
+Highest value:12.67778070526608, lowest value:1.3142582613977363, mean : 6.47100574457229,sd:1.9907320429948263
+Learning rate: 0.0018925158223810842
+Epoch: 27 
+Batch: 0
+Epoch: 27 
+Batch: 100
+epoch: 27 total loss 1085.102616 affinity loss 5.218669 pairwise loss 10798.839253
+train 5705 RMSE 1.630482 Pearson 0.59578 Spearman 0.600232 avg pairwise AUC 0.495792
+valid 1212 RMSE 1.576904 Pearson 0.576259 Spearman 0.559636 avg pairwise AUC 0.495361
+test  1555 RMSE 1.735602 Pearson 0.519822 Spearman 0.511765 avg pairwise AUC 0.495755
+Finished Training
+------------------------------
+fold 4 begin
+train num: 6080 valid num: 821 test num: 1571
+Highest value:15.221848749616356, lowest value:0.3979400086720375, mean : 6.334519323058116,sd:2.010080615089341
+Highest value:12.0, lowest value:0.8239087409443187, mean : 6.076446695367138,sd:1.9669892137151674
+Highest value:15.0, lowest value:0.4948500216800942, mean : 6.335240218395729,sd:1.9872663448824663
+Learning rate: 0.0018925158223810842
+Epoch: 27 
+Batch: 0
+Epoch: 27 
+Batch: 100
+epoch: 27 total loss 1095.197631 affinity loss 12.230712 pairwise loss 10829.669002
+train 6080 RMSE 1.638837 Pearson 0.58189 Spearman 0.58804 avg pairwise AUC 0.498353
+valid 821 RMSE 1.575505 Pearson 0.612066 Spearman 0.616411 avg pairwise AUC 0.498418
+test  1571 RMSE 1.584468 Pearson 0.607241 Spearman 0.612633 avg pairwise AUC 0.498295
+Finished Training
+------------------------------
+fold 5 begin
+train num: 5683 valid num: 771 test num: 2018
+Highest value:15.221848749616356, lowest value:0.4948500216800942, mean : 6.403611108862942,sd:2.011638526984394
+Highest value:12.0, lowest value:0.749579997691106, mean : 6.3878217201210505,sd:2.0062596308515315
+Highest value:13.823908740944319, lowest value:0.3979400086720375, mean : 6.015148724632318,sd:1.948973980366106
+Learning rate: 0.0018925158223810842
+Epoch: 27 
+Batch: 0
+Epoch: 27 
+Batch: 100
+epoch: 27 total loss 1101.897516 affinity loss 5.190409 pairwise loss 10967.0709
+train 5683 RMSE 1.646052 Pearson 0.598786 Spearman 0.597577 avg pairwise AUC 0.496143
+valid 771 RMSE 1.748843 Pearson 0.521124 Spearman 0.524334 avg pairwise AUC 0.496064
+test  2018 RMSE 1.655735 Pearson 0.528454 Spearman 0.545996 avg pairwise AUC 0.496036
+Finished Training
+------------------------------
+fold avg performance , [1.68503471 0.55456431 0.56510828 0.48568556]
+[32m[I 2022-06-02 18:22:23,619][0m Trial 0 finished with values: [0.48568556271938323, 3.672894239425659, 11205.203125] and parameters: {'learning_rate': 0.0018925158223810842, 'GNN_depth': 5, 'inner_CNN_depth': 5, 'DMA_depth': 8, 'k_head': 4, 'hidden_size1': 114, 'hidden_size2': 155, 'num_epoch': 27}. [0m
+Number of finished trials:  1
+trial: 0, params: {'learning_rate': 0.0018925158223810842, 'GNN_depth': 5, 'inner_CNN_depth': 5, 'DMA_depth': 8, 'k_head': 4, 'hidden_size1': 114, 'hidden_size2': 155, 'num_epoch': 27}, values: [0.48568556271938323, 3.672894239425659, 11205.203125] 
+
+
+best trial by accuracy: 0
+best trial by affinity loss    : 0
+best trial by pairwise loss: 0
+
+Processing the main part of the code ....
+[32m[I 2022-06-02 23:05:46,249][0m A new study created in memory with name: HP-tuning Monn-2[0m
+atom dict size: 78, bond dict size: 13, word dict size: 21
+setting:new_compound
+fold : 0, train: 5988, test: 1582, valid:902
+fold : 1, train: 5876, test: 1746, valid:850
+fold : 2, train: 5705, test: 1555, valid:1212
+fold : 3, train: 6080, test: 1571, valid:821
+fold : 4, train: 5683, test: 2018, valid:771
+fold 1 begin
+train num: 5988 valid num: 902 test num: 1582
+Highest value:15.0, lowest value:0.3979400086720375, mean : 6.316178827863305,sd:2.0211355870365115
+Highest value:12.0, lowest value:1.2660007134616131, mean : 6.176285310640962,sd:1.923991644522675
+Highest value:15.221848749616356, lowest value:0.8239087409443187, mean : 6.360944647753371,sd:1.9757415763038524
+Learning rate: 0.0025659168753973216
+Epoch: 42 
+Batch: 0
+Epoch: 42 
+Batch: 100
+epoch: 42 total loss 1160.47286 affinity loss 85.527933 pairwise loss 10749.449067
+train 5988 RMSE 1.728938 Pearson 0.531986 Spearman 0.534291 avg pairwise AUC 0.495523
+valid 902 RMSE 1.676079 Pearson 0.528758 Spearman 0.547317 avg pairwise AUC 0.495295
+test  1582 RMSE 1.734413 Pearson 0.503638 Spearman 0.515541 avg pairwise AUC 0.49554
+Finished Training
+------------------------------
+fold 2 begin
+train num: 5876 valid num: 850 test num: 1746
+Highest value:15.221848749616356, lowest value:0.3979400086720375, mean : 6.266248813266618,sd:1.976992849605154
+Highest value:11.698970004336019, lowest value:1.0506099933550872, mean : 6.348450409657415,sd:2.0122753089466188
+Highest value:12.721246399047171, lowest value:1.2660007134616131, mean : 6.436793659350515,sd:2.0791297407054703
+Learning rate: 0.0025659168753973216
+Epoch: 42 
+Batch: 0
+Epoch: 42 
+Batch: 100
+epoch: 42 total loss 5334.848869 affinity loss 4258.475799 pairwise loss 10763.729982
+train 5876 RMSE 1.776821 Pearson 0.439882 Spearman 0.477992 avg pairwise AUC 0.496559
+valid 850 RMSE 1.78571 Pearson 0.46733 Spearman 0.470931 avg pairwise AUC 0.497062
+test  1746 RMSE 1.762762 Pearson 0.546934 Spearman 0.559786 avg pairwise AUC 0.496607
+Finished Training
+------------------------------
+fold 3 begin
+train num: 5705 valid num: 1212 test num: 1555
+Highest value:15.0, lowest value:0.6575773191777938, mean : 6.333695930130674,sd:2.0144719038250236
+Highest value:15.221848749616356, lowest value:0.3979400086720375, mean : 5.989400486785516,sd:1.9298356357631683
+Highest value:12.67778070526608, lowest value:1.3142582613977363, mean : 6.47100574457229,sd:1.9907320429948263
+Learning rate: 0.0025659168753973216
+Epoch: 42 
+Batch: 0
+Epoch: 42 
+Batch: 100
+epoch: 42 total loss 1126.461848 affinity loss 39.573006 pairwise loss 10868.888267
+train 5705 RMSE 1.858233 Pearson 0.548615 Spearman 0.55437 avg pairwise AUC 0.5
+valid 1212 RMSE 1.713407 Pearson 0.513983 Spearman 0.495888 avg pairwise AUC 0.5
+test  1555 RMSE 1.965297 Pearson 0.467965 Spearman 0.456165 avg pairwise AUC 0.5
+Finished Training
+------------------------------
+fold 4 begin
+train num: 6080 valid num: 821 test num: 1571
+Highest value:15.221848749616356, lowest value:0.3979400086720375, mean : 6.334519323058116,sd:2.010080615089341
+Highest value:12.0, lowest value:0.8239087409443187, mean : 6.076446695367138,sd:1.9669892137151674
+Highest value:15.0, lowest value:0.4948500216800942, mean : 6.335240218395729,sd:1.9872663448824663
+Learning rate: 0.0025659168753973216
+Epoch: 42 
+Batch: 0
+Epoch: 42 
+Batch: 100
+epoch: 42 total loss 11365.602916 affinity loss 10282.599703 pairwise loss 10830.034781
+train 6080 RMSE 1.934926 Pearson 0.422642 Spearman 0.479678 avg pairwise AUC 0.5
+valid 821 RMSE 1.851205 Pearson 0.509665 Spearman 0.534912 avg pairwise AUC 0.5
+test  1571 RMSE 1.772387 Pearson 0.530402 Spearman 0.547127 avg pairwise AUC 0.5
+Finished Training
+------------------------------
+fold 5 begin
+train num: 5683 valid num: 771 test num: 2018
+Highest value:15.221848749616356, lowest value:0.4948500216800942, mean : 6.403611108862942,sd:2.011638526984394
+Highest value:12.0, lowest value:0.749579997691106, mean : 6.3878217201210505,sd:2.0062596308515315
+Highest value:13.823908740944319, lowest value:0.3979400086720375, mean : 6.015148724632318,sd:1.948973980366106
+Learning rate: 0.0025659168753973216
+Epoch: 42 
+Batch: 0
+Epoch: 42 
+Batch: 100
+epoch: 42 total loss 5080.011244 affinity loss 3979.540794 pairwise loss 11004.703892
+train 5683 RMSE 1.909163 Pearson 0.44605 Spearman 0.454147 avg pairwise AUC 0.5
+valid 771 RMSE 1.924823 Pearson 0.405047 Spearman 0.402648 avg pairwise AUC 0.5
+test  2018 RMSE 1.833837 Pearson 0.374385 Spearman 0.379983 avg pairwise AUC 0.5
+Finished Training
+------------------------------
+fold avg performance , [1.81373905 0.48466466 0.49172039 0.4984295 ]
+[32m[I 2022-06-03 00:01:30,199][0m Trial 0 finished with values: [0.4984294974048692, 4.2055463790893555, 11205.203125] and parameters: {'learning_rate': 0.0025659168753973216, 'GNN_depth': 8, 'inner_CNN_depth': 5, 'DMA_depth': 8, 'k_head': 2, 'hidden_size1': 143, 'hidden_size2': 106, 'num_epoch': 42}. [0m
+atom dict size: 78, bond dict size: 13, word dict size: 21
+setting:new_compound
+fold : 0, train: 6072, test: 1572, valid:828
+fold : 1, train: 5538, test: 2084, valid:850
+fold : 2, train: 5695, test: 1578, valid:1199
+fold : 3, train: 6065, test: 1563, valid:844
+fold : 4, train: 6058, test: 1675, valid:739
+fold 1 begin
+train num: 6072 valid num: 828 test num: 1572
+Highest value:15.221848749616356, lowest value:0.3979400086720375, mean : 6.294272013418983,sd:2.010679625222811
+Highest value:12.328827157284916, lowest value:0.9586073148417751, mean : 6.3686072711699735,sd:1.9866759965060468
+Highest value:12.096910013008056, lowest value:0.8239087409443187, mean : 6.337961907239601,sd:1.9818399099271138
+Learning rate: 0.005588158063992867
+Epoch: 23 
+Batch: 0
+Epoch: 23 
+Batch: 100
+epoch: 23 total loss 2.3633811396944412e+16 affinity loss 2.3633811396943996e+16 pairwise loss 20335.406188
+train 6072 RMSE 5126024.503542 Pearson -0.129149 Spearman -0.290512 avg pairwise AUC 0.5
+valid 828 RMSE 7063793.199304 Pearson -0.062253 Spearman -0.333373 avg pairwise AUC 0.5
+test  1572 RMSE 5114719.521808 Pearson -0.108206 Spearman -0.322805 avg pairwise AUC 0.5
+Finished Training
+------------------------------
+fold 2 begin
+train num: 5538 valid num: 850 test num: 2084
+Highest value:15.0, lowest value:0.4948500216800942, mean : 6.376267061187815,sd:2.0244635552637162
+Highest value:12.0, lowest value:1.5228787452803376, mean : 6.364145274548343,sd:1.969909051643236
+Highest value:15.221848749616356, lowest value:0.3979400086720375, mean : 6.1103705067011695,sd:1.9457979094919235
+Learning rate: 0.005588158063992867
+Epoch: 23 
+Batch: 0
+Epoch: 23 
+Batch: 100
+epoch: 23 total loss 1.4111914934758972e+16 affinity loss 1.4111914934758922e+16 pairwise loss 20808.409461
+train 5538 RMSE 552185653.648764 Pearson 0.035347 Spearman -0.089894 avg pairwise AUC 0.5
+valid 850 RMSE 909446962.629875 Pearson 0.031613 Spearman -0.079327 avg pairwise AUC 0.5
+test  2084 RMSE 453221385.837079 Pearson -0.009742 Spearman -0.051426 avg pairwise AUC 0.5
+Finished Training
+------------------------------
+fold 3 begin
+train num: 5695 valid num: 1199 test num: 1578
+Highest value:15.221848749616356, lowest value:0.3979400086720375, mean : 6.413160190974644,sd:2.044572047390218
+Highest value:11.337242168318426, lowest value:0.9586073148417751, mean : 5.916965755507482,sd:1.8141921796051632
+Highest value:15.0, lowest value:0.4948500216800942, mean : 6.2344191227727395,sd:1.9479255990619944
+Learning rate: 0.005588158063992867
+Epoch: 23 
+Batch: 0
+Epoch: 23 
+Batch: 100
+epoch: 23 total loss 2.4517667073286277e+18 affinity loss 2.4517667073286277e+18 pairwise loss 20316.062017
+train 5695 RMSE 15611453.320275 Pearson 0.038628 Spearman 0.059537 avg pairwise AUC 0.5
+valid 1199 RMSE 12963442.073648 Pearson -0.04387 Spearman -0.023619 avg pairwise AUC 0.5
+test  1578 RMSE 15753838.206382 Pearson 0.009158 Spearman 0.024608 avg pairwise AUC 0.5
+Finished Training
+------------------------------
+fold 4 begin
+train num: 6065 valid num: 844 test num: 1563
+Highest value:15.221848749616356, lowest value:0.4948500216800942, mean : 6.31607050126788,sd:2.007630312436889
+Highest value:12.0, lowest value:0.3979400086720375, mean : 6.2208774454787,sd:1.9058795953563494
+Highest value:12.721246399047171, lowest value:0.6575773191777938, mean : 6.3326388035929195,sd:2.0356657645685647
+Learning rate: 0.005588158063992867
+Epoch: 23 
+Batch: 0
+Epoch: 23 
+Batch: 100
+epoch: 23 total loss 3.1661217069610496e+17 affinity loss 3.1661217069610496e+17 pairwise loss 20539.735192
+train 6065 RMSE 5847523.072923 Pearson 0.004974 Spearman 0.019549 avg pairwise AUC 0.5
+valid 844 RMSE 6199055.791555 Pearson 0.011837 Spearman 0.043668 avg pairwise AUC 0.5
+test  1563 RMSE 6119257.836976 Pearson 0.017729 Spearman 0.035723 avg pairwise AUC 0.5
+Finished Training
+------------------------------
+fold 5 begin
+train num: 6058 valid num: 739 test num: 1675
+Highest value:15.221848749616356, lowest value:0.3979400086720375, mean : 6.221005028134561,sd:1.9645850823586308
+Highest value:12.67778070526608, lowest value:1.0506099933550872, mean : 6.422554288846866,sd:2.0734204131059273
+Highest value:13.958607314841775, lowest value:0.8239087409443187, mean : 6.58040986524922,sd:2.0816635235996985
+Learning rate: 0.005588158063992867
+Epoch: 23 
+Batch: 0
+Epoch: 23 
+Batch: 100
+epoch: 23 total loss 1.7857910122504716e+19 affinity loss 1.7857910122504716e+19 pairwise loss 20189.792955
+train 6058 RMSE 25838202.226354 Pearson -0.038746 Spearman -0.182411 avg pairwise AUC 0.5
+valid 739 RMSE 35811593.960087 Pearson 0.036502 Spearman -0.196532 avg pairwise AUC 0.5
+test  1675 RMSE 23490600.038019 Pearson -0.017719 Spearman -0.188573 avg pairwise AUC 0.5
+Finished Training
+------------------------------
+fold avg performance , [ 1.00739960e+08 -2.17559248e-02 -1.00494495e-01  5.00000000e-01]
+[32m[I 2022-06-03 00:54:13,840][0m Trial 1 finished with values: [0.5, 3.199243485781688e+17, 26827.98046875] and parameters: {'learning_rate': 0.005588158063992867, 'GNN_depth': 3, 'inner_CNN_depth': 10, 'DMA_depth': 6, 'k_head': 3, 'hidden_size1': 95, 'hidden_size2': 130, 'num_epoch': 23}. [0m
+atom dict size: 78, bond dict size: 13, word dict size: 21
+setting:new_compound
+fold : 0, train: 5593, test: 1657, valid:1222
+fold : 1, train: 5994, test: 1703, valid:775
+fold : 2, train: 5588, test: 2033, valid:851
+fold : 3, train: 6210, test: 1505, valid:757
+fold : 4, train: 5639, test: 1574, valid:1259
+fold 1 begin
+train num: 5593 valid num: 1222 test num: 1657
+Highest value:15.221848749616356, lowest value:0.3979400086720375, mean : 6.31815766505956,sd:1.9827547075967056
+Highest value:12.0, lowest value:0.749579997691106, mean : 5.967465148983464,sd:1.846407089568936
+Highest value:12.698970004336019, lowest value:0.4948500216800942, mean : 6.533255504799965,sd:2.143855148366046
+Learning rate: 0.0003165832632353044
+Epoch: 45 
+Batch: 0
+Epoch: 45 
+Batch: 100
+epoch: 45 total loss 1078.093384 affinity loss 7.177086 pairwise loss 10709.162784
+train 5593 RMSE 2.05915 Pearson 0.545753 Spearman 0.554715 avg pairwise AUC 0.443347
+valid 1222 RMSE 1.904095 Pearson 0.483542 Spearman 0.479858 avg pairwise AUC 0.47673
+test  1657 RMSE 2.327142 Pearson 0.509458 Spearman 0.521393 avg pairwise AUC 0.439274
+Finished Training
+------------------------------
+fold 2 begin
+train num: 5994 valid num: 775 test num: 1703
+Highest value:15.221848749616356, lowest value:0.3979400086720375, mean : 6.308617668185282,sd:2.0260018758594622
+Highest value:11.522878745280337, lowest value:1.3142582613977363, mean : 6.403849754893142,sd:1.9168883467756677
+Highest value:13.0, lowest value:0.749579997691106, mean : 6.270384463326297,sd:1.9589157054674236
+Learning rate: 0.0003165832632353044
+Epoch: 45 
+Batch: 0
+Epoch: 45 
+Batch: 100
+epoch: 45 total loss 1105.699133 affinity loss 7.139267 pairwise loss 10985.598445
+train 5994 RMSE 1.687212 Pearson 0.55566 Spearman 0.56487 avg pairwise AUC 0.44775
+valid 775 RMSE 1.677716 Pearson 0.488395 Spearman 0.4859 avg pairwise AUC 0.43952
+test  1703 RMSE 1.60903 Pearson 0.571291 Spearman 0.575528 avg pairwise AUC 0.432461
+Finished Training
+------------------------------
+fold 3 begin
+train num: 5588 valid num: 851 test num: 2033
+Highest value:13.823908740944319, lowest value:0.4948500216800942, mean : 6.389187783425464,sd:2.0175660016230226
+Highest value:15.221848749616356, lowest value:0.3979400086720375, mean : 6.239299834342093,sd:2.018836262954977
+Highest value:15.0, lowest value:0.9956786262173574, mean : 6.120451112337844,sd:1.942215333973073
+Learning rate: 0.0003165832632353044
+Epoch: 45 
+Batch: 0
+Epoch: 45 
+Batch: 100
+epoch: 45 total loss 1093.749661 affinity loss 6.760316 pairwise loss 10869.893284
+train 5588 RMSE 1.670206 Pearson 0.572916 Spearman 0.574448 avg pairwise AUC 0.450614
+valid 851 RMSE 1.711829 Pearson 0.555959 Spearman 0.565075 avg pairwise AUC 0.444155
+test  2033 RMSE 1.672084 Pearson 0.54947 Spearman 0.557987 avg pairwise AUC 0.460391
+Finished Training
+------------------------------
+fold 4 begin
+train num: 6210 valid num: 757 test num: 1505
+Highest value:15.221848749616356, lowest value:0.3979400086720375, mean : 6.333580982519073,sd:2.0072004554847025
+Highest value:12.721246399047171, lowest value:1.2757241303992108, mean : 6.2047388693044105,sd:2.0386480518078987
+Highest value:13.823908740944319, lowest value:1.3010299956639813, mean : 6.2636394542741325,sd:1.9657732917774686
+Learning rate: 0.0003165832632353044
+Epoch: 45 
+Batch: 0
+Epoch: 45 
+Batch: 100
+epoch: 45 total loss 1110.358869 affinity loss 3.562316 pairwise loss 11067.965313
+train 6210 RMSE 1.639031 Pearson 0.577734 Spearman 0.585558 avg pairwise AUC 0.445839
+valid 757 RMSE 1.699606 Pearson 0.551693 Spearman 0.540836 avg pairwise AUC 0.446933
+test  1505 RMSE 1.621841 Pearson 0.564992 Spearman 0.566233 avg pairwise AUC 0.44142
+Finished Training
+------------------------------
+fold 5 begin
+train num: 5639 valid num: 1259 test num: 1574
+Highest value:13.958607314841775, lowest value:0.4948500216800942, mean : 6.355498707901453,sd:2.025420285118287
+Highest value:15.0, lowest value:0.8239087409443187, mean : 5.9849613889653215,sd:1.8928437069138824
+Highest value:15.221848749616356, lowest value:0.3979400086720375, mean : 6.405069251350583,sd:1.983564654034793
+Learning rate: 0.0003165832632353044
+Epoch: 45 
+Batch: 0
+Epoch: 45 
+Batch: 100
+epoch: 45 total loss 1080.646468 affinity loss 3.277626 pairwise loss 10773.688229
+train 5639 RMSE 1.685712 Pearson 0.607904 Spearman 0.60568 avg pairwise AUC 0.462614
+valid 1259 RMSE 1.596411 Pearson 0.570295 Spearman 0.548514 avg pairwise AUC 0.471859
+test  1574 RMSE 1.747131 Pearson 0.532261 Spearman 0.553996 avg pairwise AUC 0.467109
+Finished Training
+------------------------------
+fold avg performance , [1.79544554 0.54549438 0.55502735 0.44813098]
+[32m[I 2022-06-03 01:45:48,599][0m Trial 2 finished with values: [0.4481309813865943, 3.2038321495056152, 14354.3076171875] and parameters: {'learning_rate': 0.0003165832632353044, 'GNN_depth': 2, 'inner_CNN_depth': 6, 'DMA_depth': 2, 'k_head': 5, 'hidden_size1': 169, 'hidden_size2': 97, 'num_epoch': 45}. [0m
+atom dict size: 78, bond dict size: 13, word dict size: 21
+setting:new_compound
+fold : 0, train: 5954, test: 1764, valid:754
+fold : 1, train: 6216, test: 1474, valid:782
+fold : 2, train: 6046, test: 1620, valid:806
+fold : 3, train: 5747, test: 1997, valid:728
+fold : 4, train: 6153, test: 1617, valid:702
+fold 1 begin
+train num: 5954 valid num: 754 test num: 1764
+Highest value:15.221848749616356, lowest value:0.3979400086720375, mean : 6.245581946972461,sd:1.957945921038841
+Highest value:11.698970004336019, lowest value:1.0506099933550872, mean : 6.4633011687805935,sd:2.0151737615832217
+Highest value:12.698970004336019, lowest value:0.8239087409443187, mean : 6.460191956153543,sd:2.133232538444161
+Learning rate: 0.0053820023644197594
+Epoch: 32 
+Batch: 0
+Epoch: 32 
+Batch: 100
+epoch: 32 total loss 1.3073325815520952e+17 affinity loss 1.3073325815520904e+17 pairwise loss 19814.584297
+train 5954 RMSE 142185766.960546 Pearson 0.121315 Spearman 0.1703 avg pairwise AUC 0.5
+valid 754 RMSE 139694790.226287 Pearson 0.084909 Spearman 0.163595 avg pairwise AUC 0.5
+test  1764 RMSE 136832701.722685 Pearson 0.123473 Spearman 0.19511 avg pairwise AUC 0.5
+Finished Training
+------------------------------
+fold 2 begin
+train num: 6216 valid num: 782 test num: 1474
+Highest value:15.221848749616356, lowest value:0.3979400086720375, mean : 6.29637513517921,sd:2.02488730499498
+Highest value:12.721246399047171, lowest value:1.575118363368933, mean : 6.263460920105743,sd:1.9399023728727123
+Highest value:13.958607314841775, lowest value:0.8239087409443187, mean : 6.390100627132148,sd:1.9411144717239375
+Learning rate: 0.0053820023644197594
+Epoch: 32 
+Batch: 0
+Epoch: 32 
+Batch: 100
+epoch: 32 total loss 1.0791341684308754e+18 affinity loss 1.0791341684308754e+18 pairwise loss 20512.472832
+train 6216 RMSE 21534395.526087 Pearson -0.031049 Spearman -0.015009 avg pairwise AUC 0.5
+valid 782 RMSE 20965756.143594 Pearson -0.075269 Spearman -0.077021 avg pairwise AUC 0.5
+test  1474 RMSE 22501454.095557 Pearson -0.068937 Spearman -0.132678 avg pairwise AUC 0.5
+Finished Training
+------------------------------
+fold 3 begin
+train num: 6046 valid num: 806 test num: 1620
+Highest value:15.221848749616356, lowest value:0.4948500216800942, mean : 6.296719384441666,sd:2.0210550150760747
+Highest value:11.886056647693163, lowest value:0.9965394678904937, mean : 6.459812555794964,sd:1.988699184212828
+Highest value:13.823908740944319, lowest value:0.3979400086720375, mean : 6.2831656085706165,sd:1.9392018729596787
+Learning rate: 0.0053820023644197594
+Epoch: 32 
+Batch: 0
+Epoch: 32 
+Batch: 100
+epoch: 32 total loss 3.215270764556658e+18 affinity loss 3.215270764556658e+18 pairwise loss 12323.372418
+train 6046 RMSE 2892452776.792155 Pearson -0.155734 Spearman -0.255752 avg pairwise AUC 0.469417
+valid 806 RMSE 2912628438.749735 Pearson -0.170785 Spearman -0.259161 avg pairwise AUC 0.469472
+test  1620 RMSE 2931865384.316102 Pearson -0.140953 Spearman -0.23182 avg pairwise AUC 0.473553
+Finished Training
+------------------------------
+fold 4 begin
+train num: 5747 valid num: 728 test num: 1997
+Highest value:13.823908740944319, lowest value:0.8239087409443187, mean : 6.395730104991345,sd:2.0049365833922748
+Highest value:13.958607314841775, lowest value:0.3979400086720375, mean : 6.396082079791045,sd:2.1000572616727124
+Highest value:15.221848749616356, lowest value:0.6575773191777938, mean : 6.030392557193947,sd:1.935388745400072
+Learning rate: 0.0053820023644197594
+Epoch: 32 
+Batch: 0
+Epoch: 32 
+Batch: 100
+epoch: 32 total loss 2.0467243753971466e+17 affinity loss 2.0467243753971456e+17 pairwise loss 17924.225585
+train 5747 RMSE 3644799.811766 Pearson -0.084385 Spearman -0.142864 avg pairwise AUC 0.5
+valid 728 RMSE 2224916.330593 Pearson -0.068545 Spearman -0.207271 avg pairwise AUC 0.5
+test  1997 RMSE 2772480.260478 Pearson -0.065971 Spearman -0.07911 avg pairwise AUC 0.5
+Finished Training
+------------------------------
+fold 5 begin
+train num: 6153 valid num: 702 test num: 1617
+Highest value:15.0, lowest value:0.3979400086720375, mean : 6.257375838501291,sd:2.0041698861674373
+Highest value:15.221848749616356, lowest value:1.3142582613977363, mean : 6.459509434971373,sd:1.9261795924060505
+Highest value:12.096910013008056, lowest value:0.4948500216800942, mean : 6.443471519196725,sd:2.022613168004139
+Learning rate: 0.0053820023644197594
+Epoch: 32 
+Batch: 0
+Epoch: 32 
+Batch: 100
+epoch: 32 total loss 5.401210805907369e+18 affinity loss 5.401210805907369e+18 pairwise loss 15226.229944
+train 6153 RMSE 20952179.454738 Pearson -0.087309 Spearman -0.145911 avg pairwise AUC 0.499967
+valid 702 RMSE 17745937.358008 Pearson -0.129847 Spearman -0.135974 avg pairwise AUC 0.499988
+test  1617 RMSE 21671821.651815 Pearson -0.075754 Spearman -0.155335 avg pairwise AUC 0.499982
+Finished Training
+------------------------------
+fold avg performance , [ 6.23128768e+08 -4.56283815e-02 -8.07667181e-02  4.94707070e-01]
+[32m[I 2022-06-03 03:08:07,224][0m Trial 3 finished with values: [0.4947070704396155, 2.2567711180712837e+18, 17209.15234375] and parameters: {'learning_rate': 0.0053820023644197594, 'GNN_depth': 5, 'inner_CNN_depth': 7, 'DMA_depth': 10, 'k_head': 3, 'hidden_size1': 135, 'hidden_size2': 134, 'num_epoch': 32}. [0m
+atom dict size: 78, bond dict size: 13, word dict size: 21
+setting:new_compound
+fold : 0, train: 6161, test: 1542, valid:769
+fold : 1, train: 5987, test: 1739, valid:746
+fold : 2, train: 5589, test: 2081, valid:802
+fold : 3, train: 6082, test: 1638, valid:752
+fold : 4, train: 6258, test: 1472, valid:742
+fold 1 begin
+train num: 6161 valid num: 769 test num: 1542
+Highest value:15.221848749616356, lowest value:0.6575773191777938, mean : 6.303042571864898,sd:2.0128083723359467
+Highest value:12.0, lowest value:0.4948500216800942, mean : 6.233473602625221,sd:2.0165156506734077
+Highest value:15.0, lowest value:0.3979400086720375, mean : 6.374005264922838,sd:1.9556088288301428
+Learning rate: 0.0008212021509510489
+Epoch: 38 
+Batch: 0
+Epoch: 38 
+Batch: 100
+epoch: 38 total loss 1100.535882 affinity loss 9.653793 pairwise loss 10908.820646
+train 6161 RMSE 1.910973 Pearson 0.541024 Spearman 0.557491 avg pairwise AUC 0.502344
+valid 769 RMSE 1.915244 Pearson 0.489449 Spearman 0.499333 avg pairwise AUC 0.496352
+test  1542 RMSE 1.871829 Pearson 0.539094 Spearman 0.54956 avg pairwise AUC 0.491946
+Finished Training
+------------------------------
+fold 2 begin
+train num: 5987 valid num: 746 test num: 1739
+Highest value:15.221848749616356, lowest value:0.3979400086720375, mean : 6.293974232770708,sd:2.026062925410453
+Highest value:15.0, lowest value:1.3142582613977363, mean : 6.433674990003338,sd:2.0240896515639784
+Highest value:13.958607314841775, lowest value:1.2660007134616131, mean : 6.310383743558787,sd:1.9109637730134679
+Learning rate: 0.0008212021509510489
+Epoch: 38 
+Batch: 0
+Epoch: 38 
+Batch: 100
+epoch: 38 total loss 1221.495925 affinity loss 146.096521 pairwise loss 10753.993838
+train 5987 RMSE 1.792848 Pearson 0.542086 Spearman 0.560566 avg pairwise AUC 0.499997
+valid 746 RMSE 1.848912 Pearson 0.511771 Spearman 0.524471 avg pairwise AUC 0.499995
+test  1739 RMSE 1.779518 Pearson 0.468772 Spearman 0.49963 avg pairwise AUC 0.499998
+Finished Training
+------------------------------
+fold 3 begin
+train num: 5589 valid num: 802 test num: 2081
+Highest value:15.0, lowest value:0.3979400086720375, mean : 6.407813330441233,sd:2.014344369368978
+Highest value:11.920818753952375, lowest value:0.9965394678904937, mean : 6.339828168393725,sd:1.984128805348685
+Highest value:15.221848749616356, lowest value:0.4948500216800942, mean : 6.034354497501987,sd:1.9543658940760409
+Learning rate: 0.0008212021509510489
+Epoch: 38 
+Batch: 0
+Epoch: 38 
+Batch: 100
+epoch: 38 total loss 1116.854829 affinity loss 28.108483 pairwise loss 10887.463245
+train 5589 RMSE 1.74527 Pearson 0.5477 Spearman 0.555513 avg pairwise AUC 0.498299
+valid 802 RMSE 1.778606 Pearson 0.526124 Spearman 0.526584 avg pairwise AUC 0.498192
+test  2081 RMSE 1.833469 Pearson 0.491616 Spearman 0.500821 avg pairwise AUC 0.498105
+Finished Training
+------------------------------
+fold 4 begin
+train num: 6082 valid num: 752 test num: 1638
+Highest value:15.221848749616356, lowest value:0.3979400086720375, mean : 6.245842761741789,sd:1.9523543306743945
+Highest value:13.823908740944319, lowest value:0.749579997691106, mean : 6.348369478113184,sd:2.0532573787145525
+Highest value:12.698970004336019, lowest value:0.9956786262173574, mean : 6.528762563940642,sd:2.1453825564765383
+Learning rate: 0.0008212021509510489
+Epoch: 38 
+Batch: 0
+Epoch: 38 
+Batch: 100
+epoch: 38 total loss 1056.902971 affinity loss 5.766251 pairwise loss 10511.36701
+train 6082 RMSE 1.643881 Pearson 0.562164 Spearman 0.574345 avg pairwise AUC 0.499999
+valid 752 RMSE 1.776933 Pearson 0.515481 Spearman 0.522817 avg pairwise AUC 0.499996
+test  1638 RMSE 1.765716 Pearson 0.57703 Spearman 0.584183 avg pairwise AUC 0.5
+Finished Training
+------------------------------
+fold 5 begin
+train num: 6258 valid num: 742 test num: 1472
+Highest value:15.221848749616356, lowest value:0.3979400086720375, mean : 6.290694453268261,sd:2.005920743980373
+Highest value:12.0, lowest value:0.749579997691106, mean : 6.316593462322605,sd:1.9381398914995316
+Highest value:13.0, lowest value:0.9965394678904937, mean : 6.386701336000883,sd:2.0218339498724105
+Learning rate: 0.0008212021509510489
+Epoch: 38 
+Batch: 0
+Epoch: 38 
+Batch: 100
+epoch: 38 total loss 1104.816306 affinity loss 12.527714 pairwise loss 10922.885711
+train 6258 RMSE 1.689972 Pearson 0.56805 Spearman 0.579911 avg pairwise AUC 0.495406
+valid 742 RMSE 1.587843 Pearson 0.597115 Spearman 0.585432 avg pairwise AUC 0.495467
+test  1472 RMSE 1.676573 Pearson 0.589284 Spearman 0.603536 avg pairwise AUC 0.495493
+Finished Training
+------------------------------
+fold avg performance , [1.78542111 0.53315895 0.54754601 0.49710828]
+[32m[I 2022-06-03 04:26:34,995][0m Trial 4 finished with values: [0.49710827808247543, 4.721292972564697, 11598.224609375] and parameters: {'learning_rate': 0.0008212021509510489, 'GNN_depth': 5, 'inner_CNN_depth': 8, 'DMA_depth': 8, 'k_head': 5, 'hidden_size1': 173, 'hidden_size2': 94, 'num_epoch': 38}. [0m
+atom dict size: 78, bond dict size: 13, word dict size: 21
+setting:new_compound
+fold : 0, train: 5986, test: 1591, valid:895
+fold : 1, train: 6071, test: 1630, valid:771
+fold : 2, train: 5519, test: 2142, valid:811
+fold : 3, train: 6097, test: 1548, valid:827
+fold : 4, train: 6129, test: 1561, valid:782
+fold 1 begin
+train num: 5986 valid num: 895 test num: 1591
+Highest value:15.221848749616356, lowest value:0.3979400086720375, mean : 6.294305728560507,sd:1.9564456589794623
+Highest value:12.698970004336019, lowest value:0.6575773191777938, mean : 6.583589004127331,sd:2.2438913843276116
+Highest value:15.0, lowest value:0.8239087409443187, mean : 6.213247237166747,sd:2.02045005286996
+Learning rate: 2.7801448047334904e-05
+Epoch: 45 
+Batch: 0
+Epoch: 45 
+Batch: 100
+epoch: 45 total loss 1204.750904 affinity loss 16.181068 pairwise loss 11885.698173
+train 5986 RMSE 1.739283 Pearson 0.468479 Spearman 0.479451 avg pairwise AUC 0.459609
+valid 895 RMSE 1.94949 Pearson 0.5473 Spearman 0.571226 avg pairwise AUC 0.453449
+test  1591 RMSE 1.750277 Pearson 0.524315 Spearman 0.527576 avg pairwise AUC 0.450372
+Finished Training
+------------------------------
+fold 2 begin
+train num: 6071 valid num: 771 test num: 1630
+Highest value:15.0, lowest value:0.6575773191777938, mean : 6.261421376059455,sd:2.012871415986732
+Highest value:12.096910013008056, lowest value:0.3979400086720375, mean : 6.354327876722574,sd:1.9670848245313723
+Highest value:15.221848749616356, lowest value:0.4948500216800942, mean : 6.468114501337051,sd:1.975061125294337
+Learning rate: 2.7801448047334904e-05
+Epoch: 45 
+Batch: 0
+Epoch: 45 
+Batch: 100
+epoch: 45 total loss 1096.540646 affinity loss 3.043952 pairwise loss 10934.966802
+train 6071 RMSE 1.770534 Pearson 0.549836 Spearman 0.555441 avg pairwise AUC 0.4669
+valid 771 RMSE 1.83185 Pearson 0.467859 Spearman 0.474345 avg pairwise AUC 0.462565
+test  1630 RMSE 1.840984 Pearson 0.482329 Spearman 0.494308 avg pairwise AUC 0.465826
+Finished Training
+------------------------------
+fold 3 begin
+train num: 5519 valid num: 811 test num: 2142
+Highest value:15.0, lowest value:0.3979400086720375, mean : 6.280162395868411,sd:1.9955838120387033
+Highest value:15.221848749616356, lowest value:0.8239087409443187, mean : 6.509082315146745,sd:2.012170733406858
+Highest value:12.698970004336019, lowest value:0.6575773191777938, mean : 6.310093643234212,sd:2.01498815791195
+Learning rate: 2.7801448047334904e-05
+Epoch: 45 
+Batch: 0
+Epoch: 45 
+Batch: 100
+epoch: 45 total loss 1051.496725 affinity loss 2.986685 pairwise loss 10485.100196
+train 5519 RMSE 1.666749 Pearson 0.551005 Spearman 0.553852 avg pairwise AUC 0.458651
+valid 811 RMSE 1.752973 Pearson 0.490338 Spearman 0.505126 avg pairwise AUC 0.455822
+test  2142 RMSE 1.703662 Pearson 0.542836 Spearman 0.545094 avg pairwise AUC 0.479638
+Finished Training
+------------------------------
+fold 4 begin
+train num: 6097 valid num: 827 test num: 1548
+Highest value:13.958607314841775, lowest value:0.4948500216800942, mean : 6.277989316828738,sd:1.9951801971099647
+Highest value:15.221848749616356, lowest value:1.3142582613977363, mean : 6.503163316002846,sd:2.092653131007614
+Highest value:13.0, lowest value:0.3979400086720375, mean : 6.330933899967881,sd:1.9796095966524974
+Learning rate: 2.7801448047334904e-05
+Epoch: 45 
+Batch: 0
+Epoch: 45 
+Batch: 100
+epoch: 45 total loss 1075.413755 affinity loss 2.954236 pairwise loss 10724.59499
+train 6097 RMSE 1.738616 Pearson 0.556579 Spearman 0.558855 avg pairwise AUC 0.469219
+valid 827 RMSE 1.855847 Pearson 0.518774 Spearman 0.521449 avg pairwise AUC 0.445819
+test  1548 RMSE 1.770129 Pearson 0.529553 Spearman 0.53605 avg pairwise AUC 0.450993
+Finished Training
+------------------------------
+fold 5 begin
+train num: 6129 valid num: 782 test num: 1561
+Highest value:15.0, lowest value:0.3979400086720375, mean : 6.328258228130895,sd:1.9926477430778173
+Highest value:15.221848749616356, lowest value:1.3142582613977363, mean : 6.341322982423778,sd:2.0623894741737434
+Highest value:11.853871964321762, lowest value:0.9586073148417751, mean : 6.220687605201667,sd:2.0119456059603715
+Learning rate: 2.7801448047334904e-05
+Epoch: 45 
+Batch: 0
+Epoch: 45 
+Batch: 100
+epoch: 45 total loss 1087.215972 affinity loss 2.852489 pairwise loss 10843.634637
+train 6129 RMSE 1.668455 Pearson 0.57154 Spearman 0.574177 avg pairwise AUC 0.463991
+valid 782 RMSE 1.851343 Pearson 0.459957 Spearman 0.493227 avg pairwise AUC 0.439377
+test  1561 RMSE 1.679137 Pearson 0.563358 Spearman 0.568735 avg pairwise AUC 0.460928
+Finished Training
+------------------------------
+fold avg performance , [1.74883777 0.52847806 0.53435238 0.46155129]
+[32m[I 2022-06-03 05:58:42,520][0m Trial 5 finished with values: [0.46155128767250886, 3.1852736473083496, 11994.2392578125] and parameters: {'learning_rate': 2.7801448047334904e-05, 'GNN_depth': 6, 'inner_CNN_depth': 10, 'DMA_depth': 3, 'k_head': 5, 'hidden_size1': 170, 'hidden_size2': 155, 'num_epoch': 45}. [0m
+atom dict size: 78, bond dict size: 13, word dict size: 21
+setting:new_compound
+fold : 0, train: 5969, test: 1619, valid:884
+fold : 1, train: 6068, test: 1559, valid:845
+fold : 2, train: 6053, test: 1594, valid:825
+fold : 3, train: 5879, test: 1781, valid:812
+fold : 4, train: 5784, test: 1919, valid:769
+fold 1 begin
+train num: 5969 valid num: 884 test num: 1619
+Highest value:13.823908740944319, lowest value:0.4948500216800942, mean : 6.277491204669946,sd:2.002943936739576
+Highest value:12.328827157284916, lowest value:0.8239087409443187, mean : 6.200015001288039,sd:1.9504082566055905
+Highest value:15.221848749616356, lowest value:0.3979400086720375, mean : 6.488044683369928,sd:2.0218851963896554
+Learning rate: 7.784412972147421e-05
+Epoch: 32 
+Batch: 0
+Epoch: 32 
+Batch: 100
+epoch: 32 total loss 1162.590688 affinity loss 9.883462 pairwise loss 11527.072
+train 5969 RMSE 1.78657 Pearson 0.511544 Spearman 0.508948 avg pairwise AUC 0.529111
+valid 884 RMSE 1.712062 Pearson 0.539679 Spearman 0.537869 avg pairwise AUC 0.53106
+test  1619 RMSE 1.830705 Pearson 0.446928 Spearman 0.450306 avg pairwise AUC 0.528912
+Finished Training
+------------------------------
+fold 2 begin
+train num: 6068 valid num: 845 test num: 1559
+Highest value:15.221848749616356, lowest value:0.3979400086720375, mean : 6.308349194058925,sd:2.0079988029408566
+Highest value:12.096910013008056, lowest value:0.4948500216800942, mean : 6.353699759642405,sd:2.016355751230208
+Highest value:11.318758762624412, lowest value:0.749579997691106, mean : 6.290803975459948,sd:1.9767473872144856
+Learning rate: 7.784412972147421e-05
+Epoch: 32 
+Batch: 0
+Epoch: 32 
+Batch: 100
+epoch: 32 total loss 1089.859263 affinity loss 3.061825 pairwise loss 10867.974204
+train 6068 RMSE 1.684672 Pearson 0.549997 Spearman 0.552698 avg pairwise AUC 0.500923
+valid 845 RMSE 1.782706 Pearson 0.472677 Spearman 0.480389 avg pairwise AUC 0.491643
+test  1559 RMSE 1.660269 Pearson 0.545909 Spearman 0.55174 avg pairwise AUC 0.4932
+Finished Training
+------------------------------
+fold 3 begin
+train num: 6053 valid num: 825 test num: 1594
+Highest value:15.0, lowest value:0.4948500216800942, mean : 6.288027872204786,sd:2.007580725396603
+Highest value:15.221848749616356, lowest value:0.3979400086720375, mean : 6.440246908311501,sd:2.0196989929098037
+Highest value:12.096910013008056, lowest value:0.6575773191777938, mean : 6.324131865982994,sd:1.9750065735133024
+Learning rate: 7.784412972147421e-05
+Epoch: 32 
+Batch: 0
+Epoch: 32 
+Batch: 100
+epoch: 32 total loss 1082.402101 affinity loss 2.968852 pairwise loss 10794.332294
+train 6053 RMSE 1.684128 Pearson 0.559014 Spearman 0.562782 avg pairwise AUC 0.487
+valid 825 RMSE 1.772018 Pearson 0.499455 Spearman 0.518623 avg pairwise AUC 0.494565
+test  1594 RMSE 1.654726 Pearson 0.563427 Spearman 0.561978 avg pairwise AUC 0.472707
+Finished Training
+------------------------------
+fold 4 begin
+train num: 5879 valid num: 812 test num: 1781
+Highest value:15.221848749616356, lowest value:0.3979400086720375, mean : 6.289935860808757,sd:1.9635479453314366
+Highest value:12.096910013008056, lowest value:0.8239087409443187, mean : 6.267109969034511,sd:2.069290529969223
+Highest value:12.698970004336019, lowest value:0.4948500216800942, mean : 6.394091175541125,sd:2.0976453238292496
+Learning rate: 7.784412972147421e-05
+Epoch: 32 
+Batch: 0
+Epoch: 32 
+Batch: 100
+epoch: 32 total loss 1077.822212 affinity loss 2.808448 pairwise loss 10750.137513
+train 5879 RMSE 1.661222 Pearson 0.550831 Spearman 0.561569 avg pairwise AUC 0.478142
+valid 812 RMSE 1.744681 Pearson 0.548518 Spearman 0.556869 avg pairwise AUC 0.477058
+test  1781 RMSE 1.705392 Pearson 0.5954 Spearman 0.599522 avg pairwise AUC 0.479931
+Finished Training
+------------------------------
+fold 5 begin
+train num: 5784 valid num: 769 test num: 1919
+Highest value:15.221848749616356, lowest value:0.3979400086720375, mean : 6.35078911168768,sd:2.0126700746548143
+Highest value:15.0, lowest value:0.8239087409443187, mean : 6.563180879235461,sd:2.0817195918949825
+Highest value:13.823908740944319, lowest value:1.114073660198569, mean : 6.08402933093061,sd:1.9203363870501462
+Learning rate: 7.784412972147421e-05
+Epoch: 32 
+Batch: 0
+Epoch: 32 
+Batch: 100
+epoch: 32 total loss 1090.814332 affinity loss 2.917294 pairwise loss 10878.970193
+train 5784 RMSE 1.718034 Pearson 0.571797 Spearman 0.574879 avg pairwise AUC 0.465217
+valid 769 RMSE 1.769658 Pearson 0.5953 Spearman 0.582765 avg pairwise AUC 0.464011
+test  1919 RMSE 1.657933 Pearson 0.537318 Spearman 0.540353 avg pairwise AUC 0.48249
+Finished Training
+------------------------------
+fold avg performance , [1.70180517 0.53779624 0.54077982 0.49144817]
+[32m[I 2022-06-03 06:49:02,329][0m Trial 6 finished with values: [0.4914481651126458, 3.4582085609436035, 14185.953125] and parameters: {'learning_rate': 7.784412972147421e-05, 'GNN_depth': 8, 'inner_CNN_depth': 2, 'DMA_depth': 3, 'k_head': 5, 'hidden_size1': 159, 'hidden_size2': 118, 'num_epoch': 32}. [0m
+atom dict size: 78, bond dict size: 13, word dict size: 21
+setting:new_compound
+fold : 0, train: 6024, test: 1625, valid:823
+fold : 1, train: 6183, test: 1523, valid:766
+fold : 2, train: 6147, test: 1567, valid:758
+fold : 3, train: 5612, test: 2102, valid:758
+fold : 4, train: 6030, test: 1655, valid:787
+fold 1 begin
+train num: 6024 valid num: 823 test num: 1625
+Highest value:15.221848749616356, lowest value:0.3979400086720375, mean : 6.236120329923947,sd:1.9481202724452198
+Highest value:13.823908740944319, lowest value:0.8239087409443187, mean : 6.326683347101578,sd:2.0401244574163817
+Highest value:15.0, lowest value:0.8239087409443187, mean : 6.573571287423382,sd:2.1573719097542225
+Learning rate: 0.0014307364806384077
+Epoch: 33 
+Batch: 0
+Epoch: 33 
+Batch: 100
+epoch: 33 total loss 1090.072448 affinity loss 32.987796 pairwise loss 10570.846398
+train 6024 RMSE 1.790334 Pearson 0.540607 Spearman 0.556226 avg pairwise AUC 0.498849
+valid 823 RMSE 1.813626 Pearson 0.573633 Spearman 0.592477 avg pairwise AUC 0.498984
+test  1625 RMSE 2.061417 Pearson 0.532595 Spearman 0.530472 avg pairwise AUC 0.498873
+Finished Training
+------------------------------
+fold 2 begin
+train num: 6183 valid num: 766 test num: 1523
+Highest value:15.221848749616356, lowest value:0.3979400086720375, mean : 6.289462904495559,sd:2.018015731826643
+Highest value:11.920818753952375, lowest value:1.3010299956639813, mean : 6.391556510079674,sd:1.8872386665000258
+Highest value:13.958607314841775, lowest value:0.8239087409443187, mean : 6.350375035438201,sd:1.9976530706214035
+Learning rate: 0.0014307364806384077
+Epoch: 33 
+Batch: 0
+Epoch: 33 
+Batch: 100
+epoch: 33 total loss 1084.386306 affinity loss 15.70989 pairwise loss 10686.763987
+train 6183 RMSE 1.818489 Pearson 0.552579 Spearman 0.556832 avg pairwise AUC 0.5
+valid 766 RMSE 1.716237 Pearson 0.528814 Spearman 0.532631 avg pairwise AUC 0.5
+test  1523 RMSE 1.79753 Pearson 0.538126 Spearman 0.550813 avg pairwise AUC 0.5
+Finished Training
+------------------------------
+fold 3 begin
+train num: 6147 valid num: 758 test num: 1567
+Highest value:15.0, lowest value:0.749579997691106, mean : 6.311480753070426,sd:2.0243692812237217
+Highest value:12.0, lowest value:0.3979400086720375, mean : 6.282042862635736,sd:1.9418604273127433
+Highest value:15.221848749616356, lowest value:0.4948500216800942, mean : 6.31578935876685,sd:1.9479444855638413
+Learning rate: 0.0014307364806384077
+Epoch: 33 
+Batch: 0
+Epoch: 33 
+Batch: 100
+epoch: 33 total loss 1098.790781 affinity loss 12.250767 pairwise loss 10865.399936
+train 6147 RMSE 1.745251 Pearson 0.569142 Spearman 0.572755 avg pairwise AUC 0.490618
+valid 758 RMSE 1.829722 Pearson 0.421382 Spearman 0.433356 avg pairwise AUC 0.491596
+test  1567 RMSE 1.672336 Pearson 0.579677 Spearman 0.601589 avg pairwise AUC 0.490633
+Finished Training
+------------------------------
+fold 4 begin
+train num: 5612 valid num: 758 test num: 2102
+Highest value:15.221848749616356, lowest value:0.4948500216800942, mean : 6.336454181052272,sd:2.048108860893434
+Highest value:11.522878745280337, lowest value:0.8239087409443187, mean : 6.3989564854525876,sd:1.8763482760240187
+Highest value:13.823908740944319, lowest value:0.3979400086720375, mean : 6.205857623287841,sd:1.9205371779919789
+Learning rate: 0.0014307364806384077
+Epoch: 33 
+Batch: 0
+Epoch: 33 
+Batch: 100
+epoch: 33 total loss 1187.176585 affinity loss 76.336715 pairwise loss 11108.398521
+train 5612 RMSE 1.735927 Pearson 0.575939 Spearman 0.58179 avg pairwise AUC 0.5
+valid 758 RMSE 1.620285 Pearson 0.558945 Spearman 0.554133 avg pairwise AUC 0.5
+test  2102 RMSE 1.748949 Pearson 0.49765 Spearman 0.52098 avg pairwise AUC 0.5
+Finished Training
+------------------------------
+fold 5 begin
+train num: 6030 valid num: 787 test num: 1655
+Highest value:15.221848749616356, lowest value:0.4948500216800942, mean : 6.349326946310169,sd:2.008239397917293
+Highest value:12.721246399047171, lowest value:0.3979400086720375, mean : 6.364406206002222,sd:1.9972346330506132
+Highest value:12.096910013008056, lowest value:0.9956786262173574, mean : 6.139017180553099,sd:1.978362497613918
+Learning rate: 0.0014307364806384077
+Epoch: 33 
+Batch: 0
+Epoch: 33 
+Batch: 100
+epoch: 33 total loss 1332.136607 affinity loss 232.237188 pairwise loss 10998.993877
+train 6030 RMSE 1.674272 Pearson 0.556394 Spearman 0.562587 avg pairwise AUC 0.499975
+valid 787 RMSE 1.709224 Pearson 0.521059 Spearman 0.549613 avg pairwise AUC 0.499969
+test  1655 RMSE 1.638901 Pearson 0.560405 Spearman 0.56587 avg pairwise AUC 0.499981
+Finished Training
+------------------------------
+fold avg performance , [1.78382674 0.54169073 0.55394505 0.4978975 ]
+[32m[I 2022-06-03 07:46:02,140][0m Trial 7 finished with values: [0.497897499794556, 3.5817809104919434, 13134.630859375] and parameters: {'learning_rate': 0.0014307364806384077, 'GNN_depth': 8, 'inner_CNN_depth': 5, 'DMA_depth': 4, 'k_head': 3, 'hidden_size1': 176, 'hidden_size2': 96, 'num_epoch': 33}. [0m
+atom dict size: 78, bond dict size: 13, word dict size: 21
+setting:new_compound
+fold : 0, train: 6227, test: 1430, valid:815
+fold : 1, train: 5853, test: 1566, valid:1053
+fold : 2, train: 5520, test: 2156, valid:796
+fold : 3, train: 5988, test: 1680, valid:804
+fold : 4, train: 6098, test: 1640, valid:734
+fold 1 begin
+train num: 6227 valid num: 815 test num: 1430
+Highest value:15.0, lowest value:0.3979400086720375, mean : 6.304447356329902,sd:2.017966991606655
+Highest value:15.221848749616356, lowest value:1.3979400086720375, mean : 6.2376897977861265,sd:1.9751420843798115
+Highest value:13.823908740944319, lowest value:1.114073660198569, mean : 6.3732809308583604,sd:1.9519915833983486
+Learning rate: 0.00024233322921239569
+Epoch: 37 
+Batch: 0
+Epoch: 37 
+Batch: 100
+epoch: 37 total loss 1118.768438 affinity loss 7.10619 pairwise loss 11116.62228
+train 6227 RMSE 1.699976 Pearson 0.543209 Spearman 0.549004 avg pairwise AUC 0.53448
+valid 815 RMSE 1.828614 Pearson 0.411702 Spearman 0.435905 avg pairwise AUC 0.527771
+test  1430 RMSE 1.686689 Pearson 0.511066 Spearman 0.518787 avg pairwise AUC 0.522337
+Finished Training
+------------------------------
+fold 2 begin
+train num: 5853 valid num: 1053 test num: 1566
+Highest value:15.221848749616356, lowest value:0.4948500216800942, mean : 6.251795258753198,sd:1.9693353982939619
+Highest value:13.0, lowest value:0.6575773191777938, mean : 6.659213811804872,sd:2.218174675379525
+Highest value:12.721246399047171, lowest value:0.3979400086720375, mean : 6.290800006945374,sd:1.9520453489873302
+Learning rate: 0.00024233322921239569
+Epoch: 37 
+Batch: 0
+Epoch: 37 
+Batch: 100
+epoch: 37 total loss 1068.443334 affinity loss 5.853027 pairwise loss 10625.902865
+train 5853 RMSE 1.652173 Pearson 0.546874 Spearman 0.553083 avg pairwise AUC 0.507987
+valid 1053 RMSE 1.882372 Pearson 0.548863 Spearman 0.549961 avg pairwise AUC 0.51504
+test  1566 RMSE 1.651536 Pearson 0.53307 Spearman 0.545673 avg pairwise AUC 0.498444
+Finished Training
+------------------------------
+fold 3 begin
+train num: 5520 valid num: 796 test num: 2156
+Highest value:15.221848749616356, lowest value:0.3979400086720375, mean : 6.336660670020831,sd:2.003533123449768
+Highest value:12.698970004336019, lowest value:0.9586073148417751, mean : 6.767719123235546,sd:2.318648713245295
+Highest value:13.958607314841775, lowest value:0.749579997691106, mean : 6.071350317058891,sd:1.8357760269378616
+Learning rate: 0.00024233322921239569
+Epoch: 37 
+Batch: 0
+Epoch: 37 
+Batch: 100
+epoch: 37 total loss 1060.134243 affinity loss 3.843014 pairwise loss 10562.912058
+train 5520 RMSE 1.783062 Pearson 0.556963 Spearman 0.562243 avg pairwise AUC 0.447065
+valid 796 RMSE 1.815496 Pearson 0.643942 Spearman 0.651248 avg pairwise AUC 0.457163
+test  2156 RMSE 1.737658 Pearson 0.508667 Spearman 0.50949 avg pairwise AUC 0.477061
+Finished Training
+------------------------------
+fold 4 begin
+train num: 5988 valid num: 804 test num: 1680
+Highest value:15.221848749616356, lowest value:0.3979400086720375, mean : 6.207964592087088,sd:1.9516920243493694
+Highest value:13.958607314841775, lowest value:1.3142582613977363, mean : 6.414112686111086,sd:1.9056180243638896
+Highest value:15.0, lowest value:0.4948500216800942, mean : 6.622061920915863,sd:2.1866904943175847
+Learning rate: 0.00024233322921239569
+Epoch: 37 
+Batch: 0
+Epoch: 37 
+Batch: 100
+epoch: 37 total loss 1072.659323 affinity loss 3.185946 pairwise loss 10694.733584
+train 5988 RMSE 1.688455 Pearson 0.558029 Spearman 0.569863 avg pairwise AUC 0.435741
+valid 804 RMSE 1.657561 Pearson 0.60464 Spearman 0.596406 avg pairwise AUC 0.427172
+test  1680 RMSE 1.948076 Pearson 0.577158 Spearman 0.585365 avg pairwise AUC 0.43247
+Finished Training
+------------------------------
+fold 5 begin
+train num: 6098 valid num: 734 test num: 1640
+Highest value:15.0, lowest value:0.3979400086720375, mean : 6.307708690364713,sd:2.0019939725290548
+Highest value:13.0, lowest value:1.114073660198569, mean : 6.424621606100147,sd:1.8635189030307528
+Highest value:15.221848749616356, lowest value:0.9586073148417751, mean : 6.26537972650483,sd:2.0649901050349073
+Learning rate: 0.00024233322921239569
+Epoch: 37 
+Batch: 0
+Epoch: 37 
+Batch: 100
+epoch: 37 total loss 1097.599629 affinity loss 3.58388 pairwise loss 10940.157275
+train 6098 RMSE 1.742223 Pearson 0.586575 Spearman 0.59037 avg pairwise AUC 0.431549
+valid 734 RMSE 1.677418 Pearson 0.552101 Spearman 0.572255 avg pairwise AUC 0.427365
+test  1640 RMSE 1.807559 Pearson 0.594948 Spearman 0.605927 avg pairwise AUC 0.429079
+Finished Training
+------------------------------
+fold avg performance , [1.76630348 0.54498189 0.55304832 0.47187833]
+[32m[I 2022-06-03 08:43:03,082][0m Trial 8 finished with values: [0.471878325947506, 4.135216236114502, 13432.6845703125] and parameters: {'learning_rate': 0.00024233322921239569, 'GNN_depth': 6, 'inner_CNN_depth': 6, 'DMA_depth': 2, 'k_head': 4, 'hidden_size1': 136, 'hidden_size2': 167, 'num_epoch': 37}. [0m
+atom dict size: 78, bond dict size: 13, word dict size: 21
+setting:new_compound
+fold : 0, train: 5586, test: 2143, valid:743
+fold : 1, train: 6005, test: 1597, valid:870
+fold : 2, train: 5989, test: 1632, valid:851
+fold : 3, train: 6060, test: 1521, valid:891
+fold : 4, train: 5977, test: 1579, valid:916
+fold 1 begin
+train num: 5586 valid num: 743 test num: 2143
+Highest value:15.221848749616356, lowest value:0.3979400086720375, mean : 6.30467942631952,sd:1.9797143863078102
+Highest value:15.0, lowest value:0.4948500216800942, mean : 6.399296145872758,sd:2.097674500618549
+Highest value:13.0, lowest value:0.6575773191777938, mean : 6.291500836390645,sd:2.0295635001239147
+Learning rate: 0.010344154582972533
+Epoch: 29 
+Batch: 0
+Epoch: 29 
+Batch: 100
+epoch: 29 total loss 1.827802169394091e+17 affinity loss 1.827802169394081e+17 pairwise loss 19219.603761
+train 5586 RMSE 7187561.69951 Pearson -0.013947 Spearman -0.019784 avg pairwise AUC 0.5
+valid 743 RMSE 9605044.852996 Pearson -0.013364 Spearman 0.030602 avg pairwise AUC 0.5
+test  2143 RMSE 6513900.868782 Pearson -0.037501 Spearman -0.005403 avg pairwise AUC 0.5
+Finished Training
+------------------------------
+fold 2 begin
+train num: 6005 valid num: 870 test num: 1597
+Highest value:13.823908740944319, lowest value:0.3979400086720375, mean : 6.2927328999554835,sd:2.010644352219159
+Highest value:15.0, lowest value:0.9965394678904937, mean : 6.31925224138823,sd:1.989846598396324
+Highest value:15.221848749616356, lowest value:0.8239087409443187, mean : 6.3679975516274325,sd:1.9810718613103628
+Learning rate: 0.010344154582972533
+Epoch: 29 
+Batch: 0
+Epoch: 29 
+Batch: 100
+epoch: 29 total loss 1.6204362041592838e+16 affinity loss 1.620436204159275e+16 pairwise loss 20988.172913
+train 6005 RMSE 1830776.270645 Pearson 0.132461 Spearman 0.094956 avg pairwise AUC 0.5
+valid 870 RMSE 1409365.218083 Pearson 0.094028 Spearman 0.053938 avg pairwise AUC 0.5
+test  1597 RMSE 1949348.723565 Pearson 0.124738 Spearman 0.096894 avg pairwise AUC 0.5
+Finished Training
+------------------------------
+fold 3 begin
+train num: 5989 valid num: 851 test num: 1632
+Highest value:15.221848749616356, lowest value:0.4948500216800942, mean : 6.234498995444814,sd:1.9728983057720042
+Highest value:12.698970004336019, lowest value:0.749579997691106, mean : 6.775805824749214,sd:2.1947863559929015
+Highest value:15.0, lowest value:0.3979400086720375, mean : 6.342326815936814,sd:1.974982904730839
+Learning rate: 0.010344154582972533
+Epoch: 29 
+Batch: 0
+Epoch: 29 
+Batch: 100
+epoch: 29 total loss 6591783811442983.0 affinity loss 6591783811442983.0 pairwise loss 12792.770392
+train 5989 RMSE 1135397.756993 Pearson -0.019256 Spearman -0.060948 avg pairwise AUC 0.5
+valid 851 RMSE 805608.751931 Pearson -0.039909 Spearman -0.086855 avg pairwise AUC 0.5
+test  1632 RMSE 1093674.404357 Pearson -0.113479 Spearman -0.182136 avg pairwise AUC 0.5
+Finished Training
+------------------------------
+fold 4 begin
+train num: 6060 valid num: 891 test num: 1521
+Highest value:15.221848749616356, lowest value:0.3979400086720375, mean : 6.259007609330296,sd:1.944595967056777
+Highest value:13.0, lowest value:1.3010299956639813, mean : 6.697272755142115,sd:2.250668297814166
+Highest value:13.958607314841775, lowest value:0.8239087409443187, mean : 6.28431720369246,sd:2.0541295374161614
+Learning rate: 0.010344154582972533
+Epoch: 29 
+Batch: 0
+Epoch: 29 
+Batch: 100
+epoch: 29 total loss 477921468801603.94 affinity loss 477921468801123.94 pairwise loss 19265.790233
+train 6060 RMSE 1090078.23752 Pearson -0.037123 Spearman -0.243293 avg pairwise AUC 0.5
+valid 891 RMSE 289620.982129 Pearson -0.177333 Spearman -0.418749 avg pairwise AUC 0.5
+test  1521 RMSE 317210.14319 Pearson -0.05496 Spearman -0.249034 avg pairwise AUC 0.5
+Finished Training
+------------------------------
+fold 5 begin
+train num: 5977 valid num: 916 test num: 1579
+Highest value:15.221848749616356, lowest value:0.3979400086720375, mean : 6.237603700060469,sd:1.962949403472573
+Highest value:12.698970004336019, lowest value:0.8239087409443187, mean : 6.855180019102456,sd:2.2277346706037395
+Highest value:12.328827157284916, lowest value:0.4948500216800942, mean : 6.26586471908181,sd:1.96772368123404
+Learning rate: 0.010344154582972533
+Epoch: 29 
+Batch: 0
+Epoch: 29 
+Batch: 100
+epoch: 29 total loss 143165343944109.03 affinity loss 143165343943298.06 pairwise loss 19714.726143
+train 5977 RMSE 424657.916077 Pearson -0.024175 Spearman -0.051566 avg pairwise AUC 0.5
+valid 916 RMSE 1675666.498155 Pearson 0.005345 Spearman -0.108276 avg pairwise AUC 0.5
+test  1579 RMSE 441693.893156 Pearson -0.093785 Spearman -0.099879 avg pairwise AUC 0.5
+Finished Training
+------------------------------
+fold avg performance , [ 2.06316561e+06 -3.49971934e-02 -8.79114760e-02  5.00000000e-01]
+[32m[I 2022-06-03 09:12:41,305][0m Trial 9 finished with values: [0.5, 1571892232192.0, 19815.44921875] and parameters: {'learning_rate': 0.010344154582972533, 'GNN_depth': 4, 'inner_CNN_depth': 4, 'DMA_depth': 2, 'k_head': 2, 'hidden_size1': 102, 'hidden_size2': 83, 'num_epoch': 29}. [0m
+atom dict size: 78, bond dict size: 13, word dict size: 21
+setting:new_compound
+fold : 0, train: 5922, test: 1657, valid:893
+fold : 1, train: 5589, test: 1495, valid:1388
+fold : 2, train: 5622, test: 1617, valid:1233
+fold : 3, train: 5680, test: 1943, valid:849
+fold : 4, train: 5864, test: 1760, valid:848
+fold 1 begin
+train num: 5922 valid num: 893 test num: 1657
+Highest value:15.221848749616356, lowest value:0.3979400086720375, mean : 6.331029695394488,sd:2.0554722850353313
+Highest value:12.721246399047171, lowest value:1.431798275933005, mean : 6.221157007436722,sd:1.8589717067853222
+Highest value:15.0, lowest value:1.114073660198569, mean : 6.280900145094931,sd:1.8834446658878932
+Learning rate: 0.009219724672687621
+Epoch: 29 
+Batch: 0
+Epoch: 29 
+Batch: 100
+epoch: 29 total loss 1949505689914.6538 affinity loss 1949505688432.3708 pairwise loss 20641.509736
+train 5922 RMSE 75777.50072 Pearson -0.013127 Spearman -0.030151 avg pairwise AUC 0.5
+valid 893 RMSE 64077.070409 Pearson -0.021826 Spearman -0.010832 avg pairwise AUC 0.5
+test  1657 RMSE 56631.408668 Pearson -0.032704 Spearman 0.000318 avg pairwise AUC 0.5
+Finished Training
+------------------------------
+fold 2 begin
+train num: 5589 valid num: 1388 test num: 1495
+Highest value:15.0, lowest value:0.4948500216800942, mean : 6.313001785235717,sd:1.9794264163187256
+Highest value:15.221848749616356, lowest value:0.8239087409443187, mean : 6.243386125777981,sd:2.0829991871600506
+Highest value:13.0, lowest value:0.3979400086720375, mean : 6.358605808646951,sd:2.01430665958286
+Learning rate: 0.009219724672687621
+Epoch: 29 
+Batch: 0
+Epoch: 29 
+Batch: 100
+epoch: 29 total loss 10405780691040.744 affinity loss 10405780690339.486 pairwise loss 19423.18627
+train 5589 RMSE 119603.78707 Pearson 0.005076 Spearman -0.223664 avg pairwise AUC 0.5
+valid 1388 RMSE 150321.90343 Pearson 0.103675 Spearman -0.051979 avg pairwise AUC 0.5
+test  1495 RMSE 112332.741231 Pearson -0.035623 Spearman -0.224865 avg pairwise AUC 0.5
+Finished Training
+------------------------------
+fold 3 begin
+train num: 5622 valid num: 1233 test num: 1617
+Highest value:15.0, lowest value:0.3979400086720375, mean : 6.391188942996935,sd:2.0365341101889256
+Highest value:12.328827157284916, lowest value:0.8239087409443187, mean : 5.888931095845286,sd:1.8090438653124077
+Highest value:15.221848749616356, lowest value:0.749579997691106, mean : 6.346930318790008,sd:1.9871776161656791
+Learning rate: 0.009219724672687621
+Epoch: 29 
+Batch: 0
+Epoch: 29 
+Batch: 100
+epoch: 29 total loss 27336340346487.02 affinity loss 27336340345605.617 pairwise loss 20618.64884
+train 5622 RMSE 323160.067313 Pearson -0.045491 Spearman -0.098085 avg pairwise AUC 0.499973
+valid 1233 RMSE 222577.589379 Pearson -0.033382 Spearman -0.015545 avg pairwise AUC 0.5
+test  1617 RMSE 221467.266678 Pearson -0.051511 Spearman -0.116109 avg pairwise AUC 0.5
+Finished Training
+------------------------------
+fold 4 begin
+train num: 5680 valid num: 849 test num: 1943
+Highest value:15.221848749616356, lowest value:0.3979400086720375, mean : 6.3458939913017485,sd:2.0085562726712585
+Highest value:15.0, lowest value:0.9956786262173574, mean : 6.3160967065524245,sd:2.0528980803799883
+Highest value:12.67778070526608, lowest value:0.8239087409443187, mean : 6.2008536437120485,sd:1.961131464255644
+Learning rate: 0.009219724672687621
+Epoch: 29 
+Batch: 0
+Epoch: 29 
+Batch: 100
+epoch: 29 total loss 56295097965559.98 affinity loss 56295097964736.29 pairwise loss 19938.526565
+train 5680 RMSE 81996.523861 Pearson 0.042306 Spearman 0.099467 avg pairwise AUC 0.5
+valid 849 RMSE 144738.133999 Pearson 0.018649 Spearman 0.018683 avg pairwise AUC 0.5
+test  1943 RMSE 88042.220033 Pearson -0.015981 Spearman 0.062029 avg pairwise AUC 0.5
+Finished Training
+------------------------------
+fold 5 begin
+train num: 5864 valid num: 848 test num: 1760
+Highest value:15.0, lowest value:0.3979400086720375, mean : 6.2581519994329495,sd:1.9541390478244007
+Highest value:15.221848749616356, lowest value:1.2660007134616131, mean : 6.5176991213332895,sd:1.9963849831377378
+Highest value:13.958607314841775, lowest value:0.4948500216800942, mean : 6.380960468536366,sd:2.1536107881511253
+Learning rate: 0.009219724672687621
+Epoch: 29 
+Batch: 0
+Epoch: 29 
+Batch: 100
+epoch: 29 total loss 11066480848299.482 affinity loss 11066480847642.324 pairwise loss 20253.147777
+train 5864 RMSE 310480.409686 Pearson 0.002796 Spearman -0.050204 avg pairwise AUC 0.5
+valid 848 RMSE 194044.195458 Pearson 0.028351 Spearman -0.072702 avg pairwise AUC 0.5
+test  1760 RMSE 252819.64841 Pearson 0.10548 Spearman 0.042188 avg pairwise AUC 0.5
+Finished Training
+------------------------------
+fold avg performance , [ 1.46258657e+05 -6.06802056e-03 -4.72878565e-02  5.00000000e-01]
+[32m[I 2022-06-03 10:10:08,138][0m Trial 10 finished with values: [0.5, 27870593024.0, 25967.751953125] and parameters: {'learning_rate': 0.009219724672687621, 'GNN_depth': 8, 'inner_CNN_depth': 3, 'DMA_depth': 7, 'k_head': 6, 'hidden_size1': 123, 'hidden_size2': 113, 'num_epoch': 29}. [0m
+atom dict size: 78, bond dict size: 13, word dict size: 21
+setting:new_compound
+fold : 0, train: 5882, test: 1681, valid:909
+fold : 1, train: 5572, test: 2089, valid:811
+fold : 2, train: 6025, test: 1629, valid:818
+fold : 3, train: 6133, test: 1465, valid:874
+fold : 4, train: 6064, test: 1608, valid:800
+fold 1 begin
+train num: 5882 valid num: 909 test num: 1681
+Highest value:15.221848749616356, lowest value:0.4948500216800942, mean : 6.285601556914479,sd:1.943271153656956
+Highest value:12.698970004336019, lowest value:0.3979400086720375, mean : 6.726239004777619,sd:2.3530623474546473
+Highest value:13.958607314841775, lowest value:0.749579997691106, mean : 6.168496722829048,sd:1.9750662353187083
+Learning rate: 0.006838628136646419
+Epoch: 35 
+Batch: 0
+Epoch: 35 
+Batch: 100
+epoch: 35 total loss 1272.331184 affinity loss 188.59056 pairwise loss 10837.406107
+train 5882 RMSE 1.806863 Pearson 0.470135 Spearman 0.47513 avg pairwise AUC 0.677671
+valid 909 RMSE 2.1767 Pearson 0.59099 Spearman 0.606189 avg pairwise AUC 0.660633
+test  1681 RMSE 1.813523 Pearson 0.478044 Spearman 0.481394 avg pairwise AUC 0.666715
+Finished Training
+------------------------------
+fold 2 begin
+train num: 5572 valid num: 811 test num: 2089
+Highest value:15.221848749616356, lowest value:0.4948500216800942, mean : 6.3041097439771745,sd:1.9877217014011916
+Highest value:12.698970004336019, lowest value:0.6575773191777938, mean : 6.606442071859264,sd:2.26960213625738
+Highest value:12.096910013008056, lowest value:0.3979400086720375, mean : 6.209180751781124,sd:1.921317499624111
+Learning rate: 0.006838628136646419
+Epoch: 35 
+Batch: 0
+Epoch: 35 
+Batch: 100
+epoch: 35 total loss 714109.47791 affinity loss 713013.92793 pairwise loss 10955.703969
+train 5572 RMSE 5.81315 Pearson 0.012442 Spearman -0.012531 avg pairwise AUC 0.5
+valid 811 RMSE 5.192404 Pearson 0.047953 Spearman -0.011319 avg pairwise AUC 0.5
+test  2089 RMSE 5.808989 Pearson 0.021642 Spearman -0.001652 avg pairwise AUC 0.5
+Finished Training
+------------------------------
+fold 3 begin
+train num: 6025 valid num: 818 test num: 1629
+Highest value:15.0, lowest value:0.3979400086720375, mean : 6.336724820878844,sd:2.019788430360464
+Highest value:11.795880017344075, lowest value:0.6575773191777938, mean : 6.131473806439154,sd:1.9428327980517472
+Highest value:15.221848749616356, lowest value:0.8239087409443187, mean : 6.298950266867516,sd:1.9663135352496672
+Learning rate: 0.006838628136646419
+Epoch: 35 
+Batch: 0
+Epoch: 35 
+Batch: 100
+epoch: 35 total loss 218957543.035666 affinity loss 218956163.946385 pairwise loss 13836.671515
+train 6025 RMSE 54.855607 Pearson 0.044469 Spearman -0.006359 avg pairwise AUC 0.5
+valid 818 RMSE 50.159452 Pearson 0.048507 Spearman 0.032222 avg pairwise AUC 0.5
+test  1629 RMSE 62.900532 Pearson 0.067908 Spearman -0.001857 avg pairwise AUC 0.5
+Finished Training
+------------------------------
+fold 4 begin
+train num: 6133 valid num: 874 test num: 1465
+Highest value:15.221848749616356, lowest value:0.3979400086720375, mean : 6.291301317929384,sd:2.019775442702947
+Highest value:13.823908740944319, lowest value:0.6575773191777938, mean : 6.306258798349842,sd:1.9127518781003494
+Highest value:12.67778070526608, lowest value:1.114073660198569, mean : 6.388451489126812,sd:1.9841386840141404
+Learning rate: 0.006838628136646419
+Epoch: 35 
+Batch: 0
+Epoch: 35 
+Batch: 100
+epoch: 35 total loss 24404124.147236 affinity loss 24403046.551633 pairwise loss 10774.597014
+train 6133 RMSE 75.273589 Pearson 0.183751 Spearman 0.205949 avg pairwise AUC 0.5
+valid 874 RMSE 189.905709 Pearson 0.071587 Spearman 0.13068 avg pairwise AUC 0.5
+test  1465 RMSE 81.858322 Pearson 0.142879 Spearman 0.187675 avg pairwise AUC 0.5
+Finished Training
+------------------------------
+fold 5 begin
+train num: 6064 valid num: 800 test num: 1608
+Highest value:13.958607314841775, lowest value:0.3979400086720375, mean : 6.251674214064858,sd:1.9603795672038467
+Highest value:15.221848749616356, lowest value:0.8239087409443187, mean : 6.312675704693832,sd:1.9576415538729468
+Highest value:15.0, lowest value:0.4948500216800942, mean : 6.526747267627543,sd:2.1639701395064987
+Learning rate: 0.006838628136646419
+Epoch: 35 
+Batch: 0
+Epoch: 35 
+Batch: 100
+epoch: 35 total loss 2018332675.045545 affinity loss 2018331594.991734 pairwise loss 10880.16674
+train 6064 RMSE 275.835649 Pearson 0.09455 Spearman 0.095344 avg pairwise AUC 0.5
+valid 800 RMSE 280.118822 Pearson 0.098419 Spearman 0.078088 avg pairwise AUC 0.5
+test  1608 RMSE 269.460785 Pearson 0.180465 Spearman 0.209814 avg pairwise AUC 0.5
+Finished Training
+------------------------------
+fold avg performance , [84.36843034  0.17818744  0.17507485  0.53334294]
+[32m[I 2022-06-03 11:02:45,327][0m Trial 11 finished with values: [0.5333429362108093, 22685.40625, 14596.59375] and parameters: {'learning_rate': 0.006838628136646419, 'GNN_depth': 9, 'inner_CNN_depth': 3, 'DMA_depth': 8, 'k_head': 3, 'hidden_size1': 88, 'hidden_size2': 129, 'num_epoch': 35}. [0m
+atom dict size: 78, bond dict size: 13, word dict size: 21
+setting:new_compound
+fold : 0, train: 6174, test: 1545, valid:753
+fold : 1, train: 6025, test: 1659, valid:788
+fold : 2, train: 5495, test: 1757, valid:1220
+fold : 3, train: 5622, test: 2040, valid:810
+fold : 4, train: 6168, test: 1471, valid:833
+fold 1 begin
+train num: 6174 valid num: 753 test num: 1545
+Highest value:15.221848749616356, lowest value:0.3979400086720375, mean : 6.3350904734717055,sd:2.0068516137182235
+Highest value:11.920818753952375, lowest value:0.4948500216800942, mean : 6.211731495323034,sd:1.9588819440918381
+Highest value:13.958607314841775, lowest value:0.6575773191777938, mean : 6.255676508088607,sd:2.007322571205195
+Learning rate: 0.07032091465472198
+Epoch: 32 
+Batch: 0
+Epoch: 32 
+Batch: 100
+epoch: 32 total loss nan affinity loss nan pairwise loss nan
+[33m[W 2022-06-03 11:10:32,008][0m Trial 12 failed because of the following error: ValueError("Input contains NaN, infinity or a value too large for dtype('float32').")[0m
+Traceback (most recent call last):
+  File "/home/floriane/anaconda3/envs/MONN-2/lib/python3.10/site-packages/optuna/study/_optimize.py", line 213, in _run_trial
+    value_or_values = func(trial)
+  File "/home/floriane/fonn/src/tune_hp/Tuned_hp.py", line 55, in objective
+    test_performance,test_label, test_output,auc, loss_aff_test, loss_pair_test= train_and_eval(train_data, valid_data, test_data, kernel_size, batch_size,params,net)
+  File "/home/floriane/fonn/src/tune_hp/Tuned_hp.py", line 138, in train_and_eval
+    train_performance,train_label, train_output, auc ,  loss_perf, loss_perf_1 = test(net, train_data, batch_size)
+  File "/home/floriane/fonn/src/tune_hp/test.py", line 65, in test
+    pairwise_auc_list.append(roc_auc_score(pairwise_label_i, pairwise_pred_i))
+  File "/home/floriane/anaconda3/envs/MONN-2/lib/python3.10/site-packages/sklearn/metrics/_ranking.py", line 546, in roc_auc_score
+    y_score = check_array(y_score, ensure_2d=False)
+  File "/home/floriane/anaconda3/envs/MONN-2/lib/python3.10/site-packages/sklearn/utils/validation.py", line 800, in check_array
+    _assert_all_finite(array, allow_nan=force_all_finite == "allow-nan")
+  File "/home/floriane/anaconda3/envs/MONN-2/lib/python3.10/site-packages/sklearn/utils/validation.py", line 114, in _assert_all_finite
+    raise ValueError(
+ValueError: Input contains NaN, infinity or a value too large for dtype('float32').
+Traceback (most recent call last):
+  File "/home/floriane/fonn/src/tune_hp/Tuned_hp.py", line 172, in <module>
+    study.optimize(objective, n_trials=30)
+  File "/home/floriane/anaconda3/envs/MONN-2/lib/python3.10/site-packages/optuna/study/study.py", line 400, in optimize
+    _optimize(
+  File "/home/floriane/anaconda3/envs/MONN-2/lib/python3.10/site-packages/optuna/study/_optimize.py", line 66, in _optimize
+    _optimize_sequential(
+  File "/home/floriane/anaconda3/envs/MONN-2/lib/python3.10/site-packages/optuna/study/_optimize.py", line 163, in _optimize_sequential
+    trial = _run_trial(study, func, catch)
+  File "/home/floriane/anaconda3/envs/MONN-2/lib/python3.10/site-packages/optuna/study/_optimize.py", line 264, in _run_trial
+    raise func_err
+  File "/home/floriane/anaconda3/envs/MONN-2/lib/python3.10/site-packages/optuna/study/_optimize.py", line 213, in _run_trial
+    value_or_values = func(trial)
+  File "/home/floriane/fonn/src/tune_hp/Tuned_hp.py", line 55, in objective
+    test_performance,test_label, test_output,auc, loss_aff_test, loss_pair_test= train_and_eval(train_data, valid_data, test_data, kernel_size, batch_size,params,net)
+  File "/home/floriane/fonn/src/tune_hp/Tuned_hp.py", line 138, in train_and_eval
+    train_performance,train_label, train_output, auc ,  loss_perf, loss_perf_1 = test(net, train_data, batch_size)
+  File "/home/floriane/fonn/src/tune_hp/test.py", line 65, in test
+    pairwise_auc_list.append(roc_auc_score(pairwise_label_i, pairwise_pred_i))
+  File "/home/floriane/anaconda3/envs/MONN-2/lib/python3.10/site-packages/sklearn/metrics/_ranking.py", line 546, in roc_auc_score
+    y_score = check_array(y_score, ensure_2d=False)
+  File "/home/floriane/anaconda3/envs/MONN-2/lib/python3.10/site-packages/sklearn/utils/validation.py", line 800, in check_array
+    _assert_all_finite(array, allow_nan=force_all_finite == "allow-nan")
+  File "/home/floriane/anaconda3/envs/MONN-2/lib/python3.10/site-packages/sklearn/utils/validation.py", line 114, in _assert_all_finite
+    raise ValueError(
+ValueError: Input contains NaN, infinity or a value too large for dtype('float32').
