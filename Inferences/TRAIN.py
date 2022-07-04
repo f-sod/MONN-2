@@ -200,10 +200,20 @@ if __name__ == "__main__":
     torch.save(net.state_dict(), "MONN-2.pth")
     print("Trained  network saved at MONN-2.pth")
     #save infos
-    np.save('validation_set',valid_data)
-    np.save('testing_set',test_data)
-    np.save('validation_set_info', valid_idx)
+    for vs in valid_data:
+        vs.astype(object)
+    np.save('validation_set',vs)
+    for ts in test_data:
+        ts.astype(object)
+    np.save('testing_set',ts)
+    for vi in valid_idx:
+        vi.astype(object)
+    np.save('validation_set_info',vi)
+    for ti in test_idx:
+        ti.astype(object)
     np.save('test_infos',test_idx)
+    for dp in data_pack:
+        dp.astype(object)
     np.save('data-pack', data_pack)
     #save res
     #np.save('MONN_rep_all_list_'+measure+'_'+setting+'_thre'+str(clu_thre), rep_all_list)
