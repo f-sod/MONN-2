@@ -1,3 +1,4 @@
+from collections import defaultdict
 from itertools import pairwise
 import torch 
 from CPI_model import Net
@@ -17,11 +18,16 @@ def predict(MONN,processed_input):
     MONN.eval()
     with torch.no_grad():
         #Pred
+        nbs_mask = nbs_mask.unsqueeze(0)
         affinity_pred, pairwise_pred = MONN(vertex_mask, vertex, edge, atom_adj, bond_adj, nbs_mask, seq_mask, sequence)
         # predictions -> affinity_pred et pairwise pred (-> tensor dim(sizeofsample,numberofclassetobepredicted))
     return affinity_pred, pairwise_pred
 
 if __name__ == "__main__":
+
+    atom_dict = defaultdict(lambda: len(atom_dict))
+    bond_dict = defaultdict(lambda: len(bond_dict))
+    word_dict = defaultdict(lambda: len(word_dict))
     #re instantiate the model (backbone)
     init_atom_features,init_bond_features,init_word_features=loading_emb()
     k_head, kernel_size, hidden_size1, hidden_size2, GNN_depth, inner_CNN_depth, DMA_depth = 1, 7, 128, 128, 4, 2, 2
@@ -34,7 +40,8 @@ if __name__ == "__main__":
     MONN.load_state_dict(state_model)
 
     #load validation data to get sample or get sample for inference
-    processed_input = generate_input()
+    processed_input = generate_input(atom_dict,bond_dict,word_dict)
     
     #make inference
-    pairwise_pred , affinity_pred =predict()  # pairwise_expected, affinity_expected
+    pairwise_pred , affinity_pred =predict(MONN,processed_input)  # pairwise_expected, affinity_expected
+

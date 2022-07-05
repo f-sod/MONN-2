@@ -72,7 +72,7 @@ def bond_features(bond):
     return np.array([bt == Chem.rdchem.BondType.SINGLE, bt == Chem.rdchem.BondType.DOUBLE, bt == Chem.rdchem.BondType.TRIPLE, \
     bt == Chem.rdchem.BondType.AROMATIC, bond.GetIsConjugated(), bond.IsInRing()], dtype=np.float32)
 
-def Mol2Graph(mol):
+def Mol2Graph(mol,atom_dict,bond_dict,word_dict):
     """
     Generate and store a large amount of data for the ligand
     Convert molecule into the main GNN input
@@ -127,7 +127,7 @@ def Mol2Graph(mol):
     print(fatoms, fbonds, atom_nb, bond_nb, num_nbs_mat)
     return fatoms, fbonds, atom_nb, bond_nb, num_nbs_mat
 
-def Protein2Sequence(sequence, ngram=1):
+def Protein2Sequence(sequence, word_dict,ngram=1):
     """ 
     Convert sequence to CNN input
     Basically you get an array instead of a sequence, 
@@ -264,11 +264,11 @@ def load_blosum62():
 def loading_emb():
     measure = "KIKD"
 	#load intial atom and bond features (i.e., embeddings)
-    with open('../preprocessing/pdbbind_all_atom_dict_'+measure , 'rb') as f : 
+    with open('pdbbind_all_atom_dict_'+measure , 'rb') as f : 
         atom_dict = pickle.load(f)
-    with open('../preprocessing/pdbbind_all_bond_dict_'+measure, 'rb') as f : 
+    with open('pdbbind_all_bond_dict_'+measure, 'rb') as f : 
         bond_dict = pickle.load(f)
-    with  open('../preprocessing/pdbbind_all_word_dict_'+measure, 'rb') as f:
+    with  open('pdbbind_all_word_dict_'+measure, 'rb') as f:
         word_dict = pickle.load(f)
     
     print(f"atom dict size: {len(atom_dict)}, bond dict size: {len(bond_dict)}, word dict size: {len(word_dict)}")
@@ -293,7 +293,7 @@ def loading_emb():
     
     return init_atom_features, init_bond_features, init_word_features
     
-def generate_input(): #prend seq et molecule 
+def generate_input(atom_d,bond_d,word_d): #prend seq et molecule 
 
     print("Generating embeddings ... \n")
     #input_mol= input("Enter smile of the molecule:")
@@ -305,11 +305,11 @@ def generate_input(): #prend seq et molecule
     seq="MSGLGDSSSDPANPDSHKRKGSPCDTLASSTEKRRREQENKYLEELAELLSANISDIDSLSVKPDKCKILKKTVDQIQLMKRMEQEKSTTDDDVQKSDISSSSQGVIEKESLGPLLLEALDGFFFVVNCEGRIVFVSENVTSYLGYNQEELMNTSVYSILHVGDHAEFVKNLLPKSLVNGVPWPQEATRRNSHTFNCRMLIHPPDEPGTENQEACQRYEVMQCFTVSQPKSIQEDGEDFQSCLICIARRLPRPPAITGVESFMTKQDTTGKIISIDTSSLRAAGRTGWEDLVRKCIYAFFQPQGREPSYARQLFQEVMTRGTASSPSYRFILNDGTMLSAHTKCKLCYPQSPDMQPFIMGIHIIDREHSGLSPQDDTNSGMSIPRVNPSVNPSISPAHGVARSSTLPPSNSNMVSTRINRQQSSDLHSSSHSNSSNSQGSFGCSPGSQIVANVALNQGQASSQSSNPSLNLNNSPMEGTGISLAQFMSPRRQVTSGLATRPRMPNNSFPPNISTLSSPVGMTSSACNNNNRSYSNIPVTSLQGMNEGPNNSVGFSASSPVLRQMSSQNSPSRLNIQPAKAESKDNKEIASILNEMIQSDNSSSDGKPLDSGLLHNNDRLSDGDSKYSQTSHKLVQLLTTTAEQQLRHADIDTSCKDVLSCTGTSNSASANSSGGSCPSSHSSLTERHKILHRLLQEGSPSDITTLSVEPDKKDSASTSVSVTGQVQGNSSIKLELDASKKKESKDHQLLRYLLDKDEKDLRSTPNLSLDDVKVKVEKKEQMDPCNTNPTPMTKPTPEEIKLEAQSQFTADLDQFDQLLPTLEKAAQLPGLCETDRMDGAVTSVTIKSEILPASLQSATARPTSRLNRLPELELEAIDNQFGQPGTGDQIPWTNNTVTAINQSKSEDQCISSQLDELLCPPTTVEGRNDEKALLEQLVSFLSGKDETELAELDRALGIDKLVQGGGLDVLSERFPPQQATPPLIMEERPNLYSQPYSSPSPTANLPSPFQGMVRQKPSLGTMPVQVTPPRGAFSPGMGMQPRQTLNRPPAAPNQLRLQLQQRLQGQQQLIHQNRQAILNQFAATAPVGINMRSGMQQQITPQPPLNAQMLAQRQRELYSQQHRQRQLIQQQRAMLMRQQSFGNNLPPSSGLPVQMGNPRLPQGAPQQFPYPPNYGTNPGTPPASTSPFSQLAANPEASLANRNSMVSRGMTGNIGGQFGTGINPQMQQNVFQYPGAGMVPQGEANFAPSLSPGSSMVPMPIPPPQSSLLQQTPPASGYQSPDMKAWQQGAIGNNNVFSQAVQNQPTPAQPGVYNNMSITVSMAGGNTNVQNMNPMMAQMQMSSLQMPGMNTVCPEQINDPALRHTGLYCNQLSSTDLLKTEADGTQQVQQVQVFADVQCTVNLVGGDPYLNQPGPLGTQKPTSGPQTPQAQQKSLLQQLLTE"
     #caffeine = 'CN1C=NC2=C1C(=O)N(C(=O)N2C)C'
     mol_inputs, seq_inputs = [], []
-    fa, fb, anb, bnb, nbs_mat = Mol2Graph(mol)
+    fa, fb, anb, bnb, nbs_mat = Mol2Graph(mol,atom_d,bond_d,word_d)
     
     #Function to generate inputs call
     mol_inputs.append([fa, fb, anb, bnb, nbs_mat])
-    seq_inputs.append(Protein2Sequence(seq, ngram=1))
+    seq_inputs.append(Protein2Sequence(seq,word_d,ngram=1))
    
 
     inputs = [fa,fb,anb,bnb,nbs_mat,seq_inputs]
@@ -334,6 +334,6 @@ if __name__ == "__main__":
     word_dict['X']
     
     #input processed
-    t=generate_input()
+    t=generate_input(atom_dict,bond_dict,word_dict)
     print(t)
     print("DOne")
