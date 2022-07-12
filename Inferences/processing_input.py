@@ -1,3 +1,7 @@
+#!/usr/bin/python3
+__auteurs__ = "ODJE Floriane"
+__data__ = "2022-06"
+
 from collections import defaultdict
 import os
 import pickle
@@ -93,7 +97,7 @@ def Mol2Graph(mol,atom_dict,bond_dict,word_dict):
 
     n_atoms = mol.GetNumAtoms()
     assert mol.GetNumBonds() >= 0
-
+    
     n_bonds = max(mol.GetNumBonds(), 1)
     fatoms = np.zeros((n_atoms,), dtype=np.int32) #to encode atom feature ID
     fbonds = np.zeros((n_bonds,), dtype=np.int32) #bond feature ID
@@ -102,10 +106,12 @@ def Mol2Graph(mol,atom_dict,bond_dict,word_dict):
     num_nbs = np.zeros((n_atoms,), dtype=np.int32)
     num_nbs_mat = np.zeros((n_atoms,max_nb), dtype=np.int32)
 
+    l_atoms=[]
     for atom in mol.GetAtoms():
         idx = idxfunc(atom)
+        l_atoms.append(atom.GetSymbol())
         fatoms[idx] = atom_dict[''.join(str(x) for x in atom_features(atom).astype(int).tolist())] 
-    #print(fatoms)
+    #print(l_atoms)
     
     for bond in mol.GetBonds():
         a1 = idxfunc(bond.GetBeginAtom()) #retrieve idx of the atoms where the bond start
@@ -124,8 +130,9 @@ def Mol2Graph(mol,atom_dict,bond_dict,word_dict):
         
     for i in range(len(num_nbs)):
         num_nbs_mat[i,:num_nbs[i]] = 1
-    print(fatoms, fbonds, atom_nb, bond_nb, num_nbs_mat)
-    return fatoms, fbonds, atom_nb, bond_nb, num_nbs_mat
+    #print(fatoms, fbonds, atom_nb, bond_nb, num_nbs_mat)
+    print(f'Molecules got {n_atoms} non hydrogen atoms.\n')
+    return fatoms, fbonds, atom_nb, bond_nb, num_nbs_mat , l_atoms
 
 def Protein2Sequence(sequence, word_dict,ngram=1):
     """ 
@@ -148,8 +155,8 @@ def Protein2Sequence(sequence, word_dict,ngram=1):
             output.append(word_dict[word])
     if ngram == 3:
         output = [-1]+output+[-1] # pad A QUOI CA SERT CE PAD
-    print(output)
-    print(np.array(output, np.int32))
+    #print(output)
+    #print(np.array(output, np.int32))
     return np.array(output, np.int32)
 
 
@@ -190,7 +197,7 @@ def pack1D_seq(arr_list):
 	for i,arr in enumerate(arr_list[0]):
 		n = len(arr_list)
 		a[0:n,i] = arr
-	print(a)
+	#print(a)
 	return a
     
 def get_mask(arr_list):
@@ -295,28 +302,27 @@ def loading_emb():
     
 def generate_input(atom_d,bond_d,word_d): #prend seq et molecule 
 
-    print("Generating embeddings ... \n")
-    #input_mol= input("Enter smile of the molecule:")
-    #mol=Chem.MolFromSmiles(input_mol)
-    caffeine = 'CN1C=NC2=C1C(=O)N(C(=O)N2C)C'
-    eple='COC(=O)[C@@H]1CC2=CC(=O)CC[C@@]2([C@@]23[C@@H]1[C@@H]1CC[C@]4([C@@]1(C)C[C@H]3O2)CCC(=O)O4)C'
-    mol = Chem.MolFromSmiles(eple)
-    #seq =input("Enter fasta seqence of your protein:")
-    seq="MSGLGDSSSDPANPDSHKRKGSPCDTLASSTEKRRREQENKYLEELAELLSANISDIDSLSVKPDKCKILKKTVDQIQLMKRMEQEKSTTDDDVQKSDISSSSQGVIEKESLGPLLLEALDGFFFVVNCEGRIVFVSENVTSYLGYNQEELMNTSVYSILHVGDHAEFVKNLLPKSLVNGVPWPQEATRRNSHTFNCRMLIHPPDEPGTENQEACQRYEVMQCFTVSQPKSIQEDGEDFQSCLICIARRLPRPPAITGVESFMTKQDTTGKIISIDTSSLRAAGRTGWEDLVRKCIYAFFQPQGREPSYARQLFQEVMTRGTASSPSYRFILNDGTMLSAHTKCKLCYPQSPDMQPFIMGIHIIDREHSGLSPQDDTNSGMSIPRVNPSVNPSISPAHGVARSSTLPPSNSNMVSTRINRQQSSDLHSSSHSNSSNSQGSFGCSPGSQIVANVALNQGQASSQSSNPSLNLNNSPMEGTGISLAQFMSPRRQVTSGLATRPRMPNNSFPPNISTLSSPVGMTSSACNNNNRSYSNIPVTSLQGMNEGPNNSVGFSASSPVLRQMSSQNSPSRLNIQPAKAESKDNKEIASILNEMIQSDNSSSDGKPLDSGLLHNNDRLSDGDSKYSQTSHKLVQLLTTTAEQQLRHADIDTSCKDVLSCTGTSNSASANSSGGSCPSSHSSLTERHKILHRLLQEGSPSDITTLSVEPDKKDSASTSVSVTGQVQGNSSIKLELDASKKKESKDHQLLRYLLDKDEKDLRSTPNLSLDDVKVKVEKKEQMDPCNTNPTPMTKPTPEEIKLEAQSQFTADLDQFDQLLPTLEKAAQLPGLCETDRMDGAVTSVTIKSEILPASLQSATARPTSRLNRLPELELEAIDNQFGQPGTGDQIPWTNNTVTAINQSKSEDQCISSQLDELLCPPTTVEGRNDEKALLEQLVSFLSGKDETELAELDRALGIDKLVQGGGLDVLSERFPPQQATPPLIMEERPNLYSQPYSSPSPTANLPSPFQGMVRQKPSLGTMPVQVTPPRGAFSPGMGMQPRQTLNRPPAAPNQLRLQLQQRLQGQQQLIHQNRQAILNQFAATAPVGINMRSGMQQQITPQPPLNAQMLAQRQRELYSQQHRQRQLIQQQRAMLMRQQSFGNNLPPSSGLPVQMGNPRLPQGAPQQFPYPPNYGTNPGTPPASTSPFSQLAANPEASLANRNSMVSRGMTGNIGGQFGTGINPQMQQNVFQYPGAGMVPQGEANFAPSLSPGSSMVPMPIPPPQSSLLQQTPPASGYQSPDMKAWQQGAIGNNNVFSQAVQNQPTPAQPGVYNNMSITVSMAGGNTNVQNMNPMMAQMQMSSLQMPGMNTVCPEQINDPALRHTGLYCNQLSSTDLLKTEADGTQQVQQVQVFADVQCTVNLVGGDPYLNQPGPLGTQKPTSGPQTPQAQQKSLLQQLLTE"
-    #caffeine = 'CN1C=NC2=C1C(=O)N(C(=O)N2C)C'
+    print("Enter the molecule , in SMILE format : " , end='')
+    smile=input()
+    smile.replace(' ','')
+    print("Enter the amino acids sequence, a fasta sequence without header : ",end='')
+    seq=input()
+    seq.replace(' ','')
+    print(f'You have entered:"{smile}" , "{seq}"')
+
+    #Call of Function to generate inputs
+    print("Generating embeddings ... ")
+    mol = Chem.MolFromSmiles(smile)
     mol_inputs, seq_inputs = [], []
-    fa, fb, anb, bnb, nbs_mat = Mol2Graph(mol,atom_d,bond_d,word_d)
-    
-    #Function to generate inputs call
+    fa, fb, anb, bnb, nbs_mat,n_atoms= Mol2Graph(mol,atom_d,bond_d,word_d)
     mol_inputs.append([fa, fb, anb, bnb, nbs_mat])
     seq_inputs.append(Protein2Sequence(seq,word_d,ngram=1))
-   
-
+    print("Done \n")
     inputs = [fa,fb,anb,bnb,nbs_mat,seq_inputs]
     vertex_mask, vertex, edge, atom_adj, bond_adj, nbs_mask, seq_mask, sequence = data_process(inputs)
     processed_input=[vertex_mask, vertex, edge, atom_adj, bond_adj, nbs_mask, seq_mask, sequence]
-    #vertex, edge, atom_adj, bond_adj, sequence = data_process(inputs)
-    return processed_input
+    
+    return processed_input,n_atoms,seq
 
 
 if __name__ == "__main__":
@@ -335,5 +341,5 @@ if __name__ == "__main__":
     
     #input processed
     t=generate_input(atom_dict,bond_dict,word_dict)
-    print(t)
-    print("DOne")
+    #print(t)
+    print("Done")
