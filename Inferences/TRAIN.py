@@ -206,11 +206,7 @@ if __name__ == "__main__":
     for ts in test_data:
         ts.astype(object)
     np.save('testing_set',ts)
-    for vi in valid_idx:
-        vi.astype(object)
-    np.save('validation_set_info',vi)
-    for ti in test_idx:
-        ti.astype(object)
+    np.save('validation_set_info',valid_idx)
     np.save('test_infos',test_idx)
     for dp in data_pack:
         dp.astype(object)
