@@ -1,3 +1,6 @@
+__auteurs__ = "ODJE Floriane"
+__date__ = "2022-05"
+
 import sys
 import math
 import time
