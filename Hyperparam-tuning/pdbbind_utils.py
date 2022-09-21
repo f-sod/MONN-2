@@ -1,3 +1,6 @@
+__updates__ = "ODJE Floriane"
+__date__ = "2022-05"
+
 import numpy as np
 import pickle
 from sklearn.metrics import mean_squared_error, precision_score, roc_auc_score
